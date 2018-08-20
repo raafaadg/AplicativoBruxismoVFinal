@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome SSID"
+            android:layout_weight=".3"/>
+
+        <EditText
+            android:id="@+id/et_tele_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="SSID"
+            android:inputType="text"
+            android:maxLines="1"
+            android:saveEnabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_weight=".7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Tensão Bateria" />
+
+        <EditText
+            android:id="@+id/et_tele_bateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Bateria"
+            android:inputType="text"
+            android:maxLines="1"
+            android:saveEnabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_weight=".7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Arquivo"
+            android:layout_weight=".3"/>
+
+        <EditText
+            android:id="@+id/et_tele_nomearquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Nome Arquivo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:saveEnabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_weight=".7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamanho Arquivo"
+            android:layout_weight=".3"/>
+
+        <EditText
+            android:id="@+id/et_tele_tamarquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Tamanho Arquivo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:saveEnabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_weight=".7"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_dados_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PROSSEGUIR"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:background="#16AFCA"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</LinearLayout>

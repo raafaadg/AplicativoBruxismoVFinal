@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.monitoramento.bruxismo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/cadastro"
+            style="@style/CategoryStyle"
+            android:background="#FD8E09"
+            android:layout_marginBottom="20dp"
+            android:text="Cadastro" />
+        <TextView
+            android:id="@+id/grafico"
+            style="@style/CategoryStyle"
+            android:background="#FACE"
+            android:layout_marginBottom="20dp"
+            android:text="Gráfico" />
+        <TextView
+            android:id="@+id/online"
+            style="@style/CategoryStyle"
+            android:background="#16AFCA"
+            android:layout_marginBottom="20dp"
+            android:text="Online" />
+        <TextView
+            android:id="@+id/controle"
+            style="@style/CategoryStyle"
+            android:background="#9805"
+            android:layout_marginBottom="20dp"
+            android:text="Controle" />
+        <TextView
+            android:id="@+id/compartilhar"
+            style="@style/CategoryStyle"
+            android:background="#A00"
+            android:layout_marginBottom="20dp"
+            android:text="Compartilhar" />
+        <TextView
+            android:id="@+id/teste"
+            style="@style/CategoryStyle"
+            android:background="#7520"
+            android:text="Teste" />
+
+    </LinearLayout>
+
+</ScrollView>

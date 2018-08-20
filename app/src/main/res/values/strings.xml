@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bruxismo</string>
+
+    <string name="category_phrases">Phrases</string>
+    <string name="ButtonHit">btnHit</string>
+    <string name="txtJson">TextJson</string>
+</resources>

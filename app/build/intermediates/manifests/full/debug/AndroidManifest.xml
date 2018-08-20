@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.monitoramento.bruxismo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="br.com.monitoramento.bruxismo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.CadastroActivity"
+            android:label="Cadastro"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.GraficoActivity"
+            android:label="Gráfico"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.Grafico2Activity"
+            android:label="Gráfico Abrir"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.TimeGraficoActivity"
+            android:label="GráficoTimer"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.GraficoRealTimeActivity"
+            android:label="GráficoTimer2"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.CompartilharActivity"
+            android:label="Compartilhar"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.ConfigActivity"
+            android:label="Configurações"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.SetupDadosActivity"
+            android:label="Setup Dados"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SetupStartActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.SetupStartActivity"
+            android:label="Setup Start"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.SetupOkActivity"
+            android:label="Setup Start"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SetupDadosActivity" />
+        </activity>
+        <activity
+            android:name="br.com.monitoramento.bruxismo.MainActivity2"
+            android:label="Main2"
+            android:parentActivityName="br.com.monitoramento.bruxismo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="br.com.monitoramento.bruxismo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="br.com.monitoramento.bruxismo.READ_CONTENT"
+            android:writePermission="br.com.monitoramento.bruxismo.WRITE_CONTENT" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
