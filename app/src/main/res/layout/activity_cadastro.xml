@@ -21,7 +21,7 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <EditText
+        <!--EditText
             android:id="@+id/et_emg_comando"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:saveEnabled="true"
             android:enabled="true"
             android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:textColorHint="@color/black" /-->
 
         <EditText
             android:id="@+id/et_emg_nome"
@@ -114,7 +114,7 @@
                 android:layout_weight="0.5"
                 android:text="Gravar"
                 android:textAlignment="center"
-                android:onClick="addPaciente"/>
+                android:onClick="attPaciente"/>
             <Button
                 android:id="@+id/bt_emg_load"
                 android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
                 android:gravity="end"
                 android:layout_weight="0.5"
                 android:text="CREATE"
-                android:onClick="createTable"
+                android:onClick="delTable"
                 android:textAlignment="center"/>
         </LinearLayout>
         <TextView

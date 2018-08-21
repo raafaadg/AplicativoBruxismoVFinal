@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Mon Aug 20 21:06:59 BRT 2018
+#Tue Aug 21 15:59:58 BRT 2018
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\rafae\\Desktop\\AplicativoBruxismo - VFinal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+0.base=C\:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
 0.set=DEX
 count=1

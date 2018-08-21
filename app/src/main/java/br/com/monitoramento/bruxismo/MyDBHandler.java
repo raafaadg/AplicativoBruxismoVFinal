@@ -1,5 +1,6 @@
 package br.com.monitoramento.bruxismo;
 
+import android.content.Entity;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
@@ -9,8 +10,11 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.security.KeyStore;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 public class MyDBHandler extends SQLiteOpenHelper {
     //information of database
@@ -26,10 +30,11 @@ public class MyDBHandler extends SQLiteOpenHelper {
     //initialize the database
     public MyDBHandler(Context context, String nome, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
+        forceCreate();
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE " +
+        String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " +
                 TABLE_NAME + "(" +
                 COLUMN_ID + " INTEGER PRIMARY KEY," +
                 COLUMN_NOME + " TEXT," +
@@ -39,16 +44,15 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 COLUMN_EMAIL + " TEXT " + ")";
          db.execSQL(CREATE_TABLE);
         Log.v("logSQL","CRIANDO A PORRA DO BD");
-        //Paciente paciente = new Paciente(0,"Nome",0,
-        //        0,"Genero","Email");
-        //addHandler(paciente);
+        createEmpty();
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
 
+
     public void forceCreate(){
-        SQLiteDatabase db = SQLiteDatabase.openOrCreateDatabase(DATABASE_NAME,null);
-        String CREATE_TABLE = "CREATE TABLE " +
+        SQLiteDatabase db = this.getWritableDatabase();
+        String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " +
                 TABLE_NAME + "(" +
                 COLUMN_ID + " INTEGER PRIMARY KEY," +
                 COLUMN_NOME + " TEXT," +
@@ -57,26 +61,60 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 COLUMN_GENERO + " TEXT," +
                 COLUMN_EMAIL + " TEXT " + ")";
         db.execSQL(CREATE_TABLE);
+        createEmpty();
     }
+
+    public void createEmpty(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String count = "SELECT count(*) FROM " + TABLE_NAME;
+        Cursor mcursor = db.rawQuery(count, null);
+        mcursor.moveToFirst();
+        int icount = mcursor.getInt(0);
+        if(icount<=0)
+            addHandler(new Paciente(
+                    1,
+                    "Nome",
+                    0,
+                    0,
+                    "Genero",
+                    "email"
+            ));
+    }
+
 
     public String loadHandler() {
         String result = "";
+        //List results = Collections.synchronizedList(new ArrayList());
+        ArrayList<String> results = new ArrayList<String>();
+
 
         String query = "Select * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         while (cursor.moveToNext()) {
             int result_0 = cursor.getInt(0);
+            results.add(String.valueOf(result_0));
+
             String result_1 = cursor.getString(1);
+            results.add(result_1);
+
             int result_2 = cursor.getInt(2);
+            results.add(String.valueOf(result_2));
+
             int result_3 = cursor.getInt(3);
+            results.add(String.valueOf(result_3));
+
             String result_4 = cursor.getString(4);
+            results.add(result_4);
+
             String result_5 = cursor.getString(5);
+            results.add(result_5);
+
             result += String.valueOf(result_0) + " " +
                     result_1 + " " +
                     result_2 + " " +
-                    result_3 + " " +
-                    result_4 + " " +
+                    String.valueOf(result_3) + " " +
+                    String.valueOf(result_4) + " " +
                     result_5 + " " +
                     System.getProperty("line.separator");
         }
@@ -195,16 +233,15 @@ public class MyDBHandler extends SQLiteOpenHelper {
         return String.valueOf(cursor.getCount());
     }
 
-    public boolean updateHandler(int ID, String nome, int idade, int peso,
-                                 String genero, String email) {
+    public boolean updateHandler(Paciente paciente) {
         SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues args = new ContentValues();
-        args.put(COLUMN_ID, ID);
-        args.put(COLUMN_NOME, nome);
-        args.put(COLUMN_IDADE, idade);
-        args.put(COLUMN_PESO, peso);
-        args.put(COLUMN_GENERO, genero);
-        args.put(COLUMN_EMAIL, email);
-        return db.update(TABLE_NAME, args, COLUMN_ID + "=" + ID, null) > 0;
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_ID, paciente.getID());
+        values.put(COLUMN_NOME, paciente.getPacienteNome());
+        values.put(COLUMN_IDADE, paciente.getPacienteIdade());
+        values.put(COLUMN_PESO, paciente.getPacientePeso());
+        values.put(COLUMN_GENERO, paciente.getPacienteGenero());
+        values.put(COLUMN_EMAIL, paciente.getPacienteEmail());
+        return db.update(TABLE_NAME, values, COLUMN_ID + "=" + 1, null) > 0;
     }
 }

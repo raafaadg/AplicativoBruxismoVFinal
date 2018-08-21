@@ -29,7 +29,7 @@ import okhttp3.OkHttpClient;
  */
 
 public class CadastroActivity extends AppCompatActivity{
-    EditText et_emg_comando;
+    //EditText et_emg_comando;
     EditText et_emg_nome;
     EditText et_emg_idade;
     EditText et_emg_peso;
@@ -69,7 +69,7 @@ public class CadastroActivity extends AppCompatActivity{
     }
 
     private void loadViews() {
-        et_emg_comando = (EditText) findViewById(R.id.et_emg_comando);
+        //et_emg_comando = (EditText) findViewById(R.id.et_emg_comando);
         et_emg_nome = (EditText) findViewById(R.id.et_emg_nome);
         et_emg_idade = (EditText) findViewById(R.id.et_emg_idade);
         et_emg_peso = (EditText) findViewById(R.id.et_emg_peso);
@@ -92,7 +92,7 @@ public class CadastroActivity extends AppCompatActivity{
 
     private void efetivarCadastro(){
         //new GetLeitura(CadastroActivity.this);
-        dados.add(et_emg_comando.getText().toString());
+        //dados.add(et_emg_comando.getText().toString());
         dados.add(et_emg_nome.getText().toString());
         dados.add(et_emg_idade.getText().toString());
         dados.add(et_emg_peso.getText().toString());
@@ -160,6 +160,7 @@ public class CadastroActivity extends AppCompatActivity{
             return false;
         }
     }
+
     private void recordFile(File fileToWrite){
         //Create a stream to file path
         FileOutputStream outPutStream = null;
@@ -186,8 +187,7 @@ public class CadastroActivity extends AppCompatActivity{
         }
     }
 
-    public static boolean DeleteRecursive(File fileOrDirectory)
-    {
+    public static boolean DeleteRecursive(File fileOrDirectory){
         if (fileOrDirectory.isDirectory())
         {
             for (File child : fileOrDirectory.listFiles())
@@ -197,30 +197,6 @@ public class CadastroActivity extends AppCompatActivity{
         }
 
         return fileOrDirectory.delete();
-    }
-
-
-    public void updatePaciente(View view) {
-        MyDBHandler dbHandler = new MyDBHandler(this, null,
-                null, 1);
-        boolean result = dbHandler.updateHandler(
-                        Integer.parseInt(et_emg_comando.getText().toString()),
-                        et_emg_nome.getText().toString(),
-                        Integer.parseInt(et_emg_idade.getText().toString()),
-                        Integer.parseInt(et_emg_peso.getText().toString()),
-                        et_emg_tipo.getText().toString(),
-                        et_emg_email.getText().toString()
-                );
-        if (result) {
-            et_emg_comando.setText("");
-            et_emg_nome.setText("");
-            et_emg_idade.setText("");
-            et_emg_peso.setText("");
-            et_emg_tipo.setText("");
-            et_emg_email.setText("");
-            Toast.makeText(this, "Gravação Atualizada", Toast.LENGTH_LONG).show();
-        } else
-            Toast.makeText(this, "ERRO NA GRAVAÇÃO", Toast.LENGTH_LONG).show();
     }
 
 
@@ -257,16 +233,38 @@ public class CadastroActivity extends AppCompatActivity{
 
     public void addPaciente(View view) {
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        int id = Integer.parseInt(et_emg_comando.getText().toString());
+        //int id = Integer.parseInt(et_emg_comando.getText().toString());
         String nome = et_emg_nome.getText().toString();
         int idade = Integer.parseInt(et_emg_idade.getText().toString());
         int peso = Integer.parseInt(et_emg_peso.getText().toString());
         String genero = et_emg_tipo.getText().toString();
         String email = et_emg_email.getText().toString();
 
-        Paciente paciente = new Paciente(id, nome, idade, peso, genero, email);
+        Paciente paciente = new Paciente(1, nome, idade, peso, genero, email);
         dbHandler.addHandler(paciente);
-        et_emg_comando.setText("");
+        //et_emg_comando.setText("");
+        et_emg_nome.setText("");
+        et_emg_idade.setText("");
+        et_emg_peso.setText("");
+        et_emg_tipo.setText("");
+        et_emg_email.setText("");
+    }
+
+    public void attPaciente(View view) {
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        //int id = Integer.parseInt(et_emg_comando.getText().toString());
+        String nome = et_emg_nome.getText().toString();
+        int idade = Integer.parseInt(et_emg_idade.getText().toString());
+        int peso = Integer.parseInt(et_emg_peso.getText().toString());
+        String genero = et_emg_tipo.getText().toString();
+        String email = et_emg_email.getText().toString();
+
+        Paciente paciente = new Paciente(1, nome, idade, peso, genero, email);
+        if(dbHandler.updateHandler(paciente))
+            Toast.makeText(this, "Gravação Atualizada", Toast.LENGTH_LONG).show();
+         else
+            Toast.makeText(this, "ERRO NA GRAVAÇÃO", Toast.LENGTH_LONG).show();
+        //et_emg_comando.setText("");
         et_emg_nome.setText("");
         et_emg_idade.setText("");
         et_emg_peso.setText("");
