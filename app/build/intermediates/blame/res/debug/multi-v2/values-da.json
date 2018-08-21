@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rafae\\Desktop\\testexport\\AplicativoBruxismo - VFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
+            "outputFile": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismo - VFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rafae\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\650acb7e08f62fada10866fe2e038f0e\\res\\values-da\\values-da.xml",

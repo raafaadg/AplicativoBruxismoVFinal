@@ -124,6 +124,24 @@
                 android:text="Buscar"
                 android:onClick="loadPaciente"
                 android:textAlignment="center"/>
+            <Button
+                android:id="@+id/bt_emg_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:text="CHECK"
+                android:onClick="existTable"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/bt_emg_create"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:text="CREATE"
+                android:onClick="createTable"
+                android:textAlignment="center"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"

@@ -120,24 +120,6 @@ public class ConfigActivity extends AppCompatActivity {
         }
     }
 
-    public void writeFileOnInternalStorage(Context mcoContext,String sFileName, String sBody){
-        File file = new File(mcoContext.getFilesDir(),"mydir");
-        if(!file.exists()){
-            file.mkdir();
-        }
-
-        try{
-            File gpxfile = new File(file, sFileName);
-            FileWriter writer = new FileWriter(gpxfile);
-            writer.append(sBody);
-            writer.flush();
-            writer.close();
-
-        }catch (Exception e){
-            e.printStackTrace();
-
-        }
-    }
 
     public boolean writeToFile(String dataToWrite, String fileName) {
         if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {

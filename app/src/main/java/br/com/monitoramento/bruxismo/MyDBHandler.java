@@ -5,7 +5,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +45,19 @@ public class MyDBHandler extends SQLiteOpenHelper {
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
+
+    public void forceCreate(){
+        SQLiteDatabase db = SQLiteDatabase.openOrCreateDatabase(DATABASE_NAME,null);
+        String CREATE_TABLE = "CREATE TABLE " +
+                TABLE_NAME + "(" +
+                COLUMN_ID + " INTEGER PRIMARY KEY," +
+                COLUMN_NOME + " TEXT," +
+                COLUMN_IDADE + " LONG," +
+                COLUMN_PESO + " LONG," +
+                COLUMN_GENERO + " TEXT," +
+                COLUMN_EMAIL + " TEXT " + ")";
+        db.execSQL(CREATE_TABLE);
+    }
 
     public String loadHandler() {
         String result = "";
@@ -166,6 +181,18 @@ public class MyDBHandler extends SQLiteOpenHelper {
         }
         db.close();
         return result;
+    }
+    public void deleteTable(){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+    }
+
+    public String checkTable(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select DISTINCT tbl_name from sqlite_master where tbl_name = '"
+                + TABLE_NAME + "'", null);
+        return String.valueOf(cursor.getCount());
     }
 
     public boolean updateHandler(int ID, String nome, int idade, int peso,

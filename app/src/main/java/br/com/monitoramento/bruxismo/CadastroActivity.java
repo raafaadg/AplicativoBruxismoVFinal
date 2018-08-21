@@ -37,6 +37,7 @@ public class CadastroActivity extends AppCompatActivity{
     EditText et_emg_email;
     Button bt_emg_update;
     Button bt_emg_load;
+    Button bt_emg_check;
     TextView lst;
     public ArrayList<String> dados = new ArrayList <String>();
 
@@ -76,6 +77,7 @@ public class CadastroActivity extends AppCompatActivity{
         et_emg_email = (EditText) findViewById(R.id.et_emg_email);
         bt_emg_update = (Button) findViewById(R.id.bt_emg_update);
         bt_emg_load = (Button) findViewById(R.id.bt_emg_load);
+        bt_emg_check = (Button) findViewById(R.id.bt_emg_check);
         lst = (TextView) findViewById(R.id.lst);
     }
 
@@ -235,7 +237,23 @@ public class CadastroActivity extends AppCompatActivity{
         //et_emg_tipo.setText("");
         //et_emg_email.setText("");
     }
+    public void delTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.deleteTable();
+    }
 
+    public void existTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.checkTable();
+        Toast.makeText(this, dbHandler.checkTable() , Toast.LENGTH_SHORT).show();
+    }
+
+    public void createTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.forceCreate();
+        Toast.makeText(this, "Tabela Criada" , Toast.LENGTH_LONG).show();
+
+    }
 
     public void addPaciente(View view) {
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
