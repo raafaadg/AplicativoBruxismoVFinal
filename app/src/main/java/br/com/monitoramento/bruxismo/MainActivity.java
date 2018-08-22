@@ -78,14 +78,15 @@ public class MainActivity extends AppCompatActivity {
         tv_emg_online.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                new JsonTask().execute("http://192.168.4.1/mestrado/online");
+                Log.v("online","Modo online ativado");
                 Intent numbersIntent = new Intent(MainActivity.this, TimeGraficoActivity.class);
                 startActivity(numbersIntent);
-                new JsonTask().execute("http://192.168.4.1/mestrado/online");
             }
         });
 
         new JsonTask().execute("http://192.168.4.1/mestrado/offline");
-
+        Log.v("online","Modo online desativado");
     }
 
     private void loadViews() {
