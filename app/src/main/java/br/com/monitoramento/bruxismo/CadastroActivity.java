@@ -30,15 +30,16 @@ import okhttp3.OkHttpClient;
 
 public class CadastroActivity extends AppCompatActivity{
     //EditText et_emg_comando;
-    EditText et_emg_nome;
-    EditText et_emg_idade;
-    EditText et_emg_peso;
-    EditText et_emg_tipo;
-    EditText et_emg_email;
-    Button bt_emg_update;
-    Button bt_emg_load;
-    Button bt_emg_check;
-    TextView lst;
+    public EditText et_emg_nome;
+    public EditText et_emg_idade;
+    public EditText et_emg_peso;
+    public EditText et_emg_tipo;
+    public EditText et_emg_email;
+    public Button bt_emg_update;
+    public Button bt_emg_load;
+    public Button bt_emg_check;
+    public Button bt_emg_create;
+    public TextView lst;
     public ArrayList<String> dados = new ArrayList <String>();
 
     @Override
@@ -65,6 +66,12 @@ public class CadastroActivity extends AppCompatActivity{
         //        Log.e("logSQL","Buscando Informações no BD");
         //    }
         //});
+        //bt_emg_create.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View v) {
+        //        clear();
+        //    }
+        //});
 
     }
 
@@ -77,8 +84,9 @@ public class CadastroActivity extends AppCompatActivity{
         et_emg_email = (EditText) findViewById(R.id.et_emg_email);
         bt_emg_update = (Button) findViewById(R.id.bt_emg_update);
         bt_emg_load = (Button) findViewById(R.id.bt_emg_load);
-        bt_emg_check = (Button) findViewById(R.id.bt_emg_check);
-        lst = (TextView) findViewById(R.id.lst);
+        //bt_emg_check = (Button) findViewById(R.id.bt_emg_check);
+        //bt_emg_create = (Button) findViewById(R.id.bt_emg_create);
+        //lst = (TextView) findViewById(R.id.lst);
     }
 
     public void setInfo(GetLeituraResponse info) {
@@ -87,6 +95,16 @@ public class CadastroActivity extends AppCompatActivity{
 //        et_emg_idade.setText(info.idade);
 //        et_emg_peso.setText(info.peso);
 //        et_emg_tipo.setText(info.tipo);
+
+    }
+
+    public void clear() {
+        //et_emg_comando.setText(info.comando);
+        et_emg_nome.setText("");
+        et_emg_idade.setText("");
+        et_emg_peso.setText("");
+        et_emg_tipo.setText("");
+        et_emg_email.setText("");
 
     }
 
@@ -204,14 +222,13 @@ public class CadastroActivity extends AppCompatActivity{
         Log.v("logSQL","Executando loadPaciente");
 
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        Log.v("logSQL",dbHandler.loadHandler().toString());
-        lst.setText(dbHandler.loadHandler().toString());
-        //et_emg_comando.setText("");
-        //et_emg_nome.setText("");
-        //et_emg_idade.setText("");
-        //et_emg_peso.setText("");
-        //et_emg_tipo.setText("");
-        //et_emg_email.setText("");
+        ArrayList<String> result = dbHandler.loadHandler();
+        lst.setText(result.toString());
+        et_emg_nome.setText(result.get(0));
+        et_emg_idade.setText(result.get(1));
+        et_emg_peso.setText(result.get(2));
+        et_emg_tipo.setText(result.get(3));
+        et_emg_email.setText(result.get(4));
     }
     public void delTable(View view){
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
@@ -252,12 +269,34 @@ public class CadastroActivity extends AppCompatActivity{
 
     public void attPaciente(View view) {
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        //int id = Integer.parseInt(et_emg_comando.getText().toString());
-        String nome = et_emg_nome.getText().toString();
-        int idade = Integer.parseInt(et_emg_idade.getText().toString());
-        int peso = Integer.parseInt(et_emg_peso.getText().toString());
-        String genero = et_emg_tipo.getText().toString();
-        String email = et_emg_email.getText().toString();
+        ArrayList<String> results = dbHandler.loadHandler();
+        String nome, genero, email;
+        int idade,peso;
+
+        if(et_emg_nome.getText().toString().isEmpty())
+             nome = results.get(0);
+        else
+            nome = et_emg_nome.getText().toString();
+
+        if(et_emg_idade.getText().toString().isEmpty())
+            idade = Integer.parseInt(results.get(1));
+        else
+            idade = Integer.parseInt(et_emg_idade.getText().toString());
+
+        if(et_emg_peso.getText().toString().isEmpty())
+            peso = Integer.parseInt(results.get(2));
+        else
+            peso = Integer.parseInt(et_emg_peso.getText().toString());
+
+        if(et_emg_tipo.getText().toString().isEmpty())
+            genero = results.get(3);
+        else
+            genero = et_emg_tipo.getText().toString();
+
+        if(et_emg_email.getText().toString().isEmpty())
+            email = results.get(4);
+        else
+            email = et_emg_email.getText().toString();
 
         Paciente paciente = new Paciente(1, nome, idade, peso, genero, email);
         if(dbHandler.updateHandler(paciente))

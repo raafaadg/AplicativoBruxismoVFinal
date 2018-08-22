@@ -1,4 +1,4 @@
-#Tue Aug 21 15:59:58 BRT 2018
-base.0=C\:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Aug 21 23:37:37 BRT 2018
+base.0=C\:\\Users\\rafae\\Desktop\\AplicativoBruxismo - VFinal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -124,7 +124,7 @@
                 android:text="Buscar"
                 android:onClick="loadPaciente"
                 android:textAlignment="center"/>
-            <Button
+            <!--Button
                 android:id="@+id/bt_emg_check"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -140,14 +140,15 @@
                 android:gravity="end"
                 android:layout_weight="0.5"
                 android:text="CREATE"
-                android:onClick="delTable"
+
                 android:textAlignment="center"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lst"/>
+            android:id="@+id/lst"/-->
 
+    </LinearLayout>
 
     </LinearLayout>
 

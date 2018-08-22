@@ -8,6 +8,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.security.KeyStore;
@@ -82,18 +84,18 @@ public class MyDBHandler extends SQLiteOpenHelper {
     }
 
 
-    public String loadHandler() {
+    public ArrayList<String> loadHandler() {
         String result = "";
-        //List results = Collections.synchronizedList(new ArrayList());
+        String resultado = "";
         ArrayList<String> results = new ArrayList<String>();
-
+        CadastroActivity cadstro = new CadastroActivity();
 
         String query = "Select * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         while (cursor.moveToNext()) {
             int result_0 = cursor.getInt(0);
-            results.add(String.valueOf(result_0));
+            //results.add(String.valueOf(result_0));
 
             String result_1 = cursor.getString(1);
             results.add(result_1);
@@ -117,54 +119,13 @@ public class MyDBHandler extends SQLiteOpenHelper {
                     String.valueOf(result_4) + " " +
                     result_5 + " " +
                     System.getProperty("line.separator");
+            resultado = result_1;
         }
         cursor.close();
         db.close();
-        Log.e("logSQL",result);
-        return result;
-
+        return results;
     }
 
-    public List loadHandler2(){
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// Define a projection that specifies which columns from the database
-// you will actually use after this query.
-        String[] projection = {
-                COLUMN_ID,
-                COLUMN_NOME,
-                COLUMN_IDADE,
-                COLUMN_PESO,
-                COLUMN_GENERO,
-                COLUMN_EMAIL
-        };
-
-// Filter results WHERE "title" = 'My Title'
-        String selection = COLUMN_NOME+ " = ?";
-        String[] selectionArgs = { "rafaeldg" };
-
-// How you want the results sorted in the resulting Cursor
-        String sortOrder =
-                COLUMN_ID + " DESC";
-
-        Cursor cursor = db.query(
-                TABLE_NAME,   // The table to query
-                projection,             // The array of columns to return (pass null to get all)
-                selection,              // The columns for the WHERE clause
-                selectionArgs,          // The values for the WHERE clause
-                null,                   // don't group the rows
-                null,                   // don't filter by row groups
-                sortOrder               // The sort order
-        );
-        List itemIds = new ArrayList<>();
-        while(cursor.moveToNext()) {
-            long itemId = cursor.getLong(
-                    cursor.getColumnIndexOrThrow(COLUMN_ID));
-            itemIds.add(itemId);
-        }
-        cursor.close();
-        return itemIds;
-    }
 
     public void addHandler(Paciente paciente) {
         ContentValues values = new ContentValues();
