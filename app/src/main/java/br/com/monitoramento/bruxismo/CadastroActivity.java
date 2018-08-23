@@ -75,28 +75,7 @@ public class CadastroActivity extends AppCompatActivity{
 
     }
 
-    private void loadViews() {
-        //et_emg_comando = (EditText) findViewById(R.id.et_emg_comando);
-        et_emg_nome = (EditText) findViewById(R.id.et_emg_nome);
-        et_emg_idade = (EditText) findViewById(R.id.et_emg_idade);
-        et_emg_peso = (EditText) findViewById(R.id.et_emg_peso);
-        et_emg_tipo = (EditText) findViewById(R.id.et_emg_tipo);
-        et_emg_email = (EditText) findViewById(R.id.et_emg_email);
-        bt_emg_update = (Button) findViewById(R.id.bt_emg_update);
-        bt_emg_load = (Button) findViewById(R.id.bt_emg_load);
-        //bt_emg_check = (Button) findViewById(R.id.bt_emg_check);
-        //bt_emg_create = (Button) findViewById(R.id.bt_emg_create);
-        //lst = (TextView) findViewById(R.id.lst);
-    }
 
-    public void setInfo(GetLeituraResponse info) {
-//        et_emg_comando.setText(info.comando);
-//        et_emg_nome.setText(info.nome);
-//        et_emg_idade.setText(info.idade);
-//        et_emg_peso.setText(info.peso);
-//        et_emg_tipo.setText(info.tipo);
-
-    }
 
     public void clear() {
         //et_emg_comando.setText(info.comando);
@@ -109,8 +88,6 @@ public class CadastroActivity extends AppCompatActivity{
     }
 
     private void efetivarCadastro(){
-        //new GetLeitura(CadastroActivity.this);
-        //dados.add(et_emg_comando.getText().toString());
         dados.add(et_emg_nome.getText().toString());
         dados.add(et_emg_idade.getText().toString());
         dados.add(et_emg_peso.getText().toString());
@@ -223,49 +200,14 @@ public class CadastroActivity extends AppCompatActivity{
 
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
         ArrayList<String> result = dbHandler.loadHandler();
-        lst.setText(result.toString());
+        //lst.setText(result.toString());
         et_emg_nome.setText(result.get(0));
         et_emg_idade.setText(result.get(1));
         et_emg_peso.setText(result.get(2));
         et_emg_tipo.setText(result.get(3));
         et_emg_email.setText(result.get(4));
     }
-    public void delTable(View view){
-        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        dbHandler.deleteTable();
-    }
 
-    public void existTable(View view){
-        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        dbHandler.checkTable();
-        Toast.makeText(this, dbHandler.checkTable() , Toast.LENGTH_SHORT).show();
-    }
-
-    public void createTable(View view){
-        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        dbHandler.forceCreate();
-        Toast.makeText(this, "Tabela Criada" , Toast.LENGTH_LONG).show();
-
-    }
-
-    public void addPaciente(View view) {
-        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
-        //int id = Integer.parseInt(et_emg_comando.getText().toString());
-        String nome = et_emg_nome.getText().toString();
-        int idade = Integer.parseInt(et_emg_idade.getText().toString());
-        int peso = Integer.parseInt(et_emg_peso.getText().toString());
-        String genero = et_emg_tipo.getText().toString();
-        String email = et_emg_email.getText().toString();
-
-        Paciente paciente = new Paciente(1, nome, idade, peso, genero, email);
-        dbHandler.addHandler(paciente);
-        //et_emg_comando.setText("");
-        et_emg_nome.setText("");
-        et_emg_idade.setText("");
-        et_emg_peso.setText("");
-        et_emg_tipo.setText("");
-        et_emg_email.setText("");
-    }
 
     public void attPaciente(View view) {
         MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
@@ -311,6 +253,52 @@ public class CadastroActivity extends AppCompatActivity{
         et_emg_email.setText("");
     }
 
+    public void addPaciente(View view) {
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        //int id = Integer.parseInt(et_emg_comando.getText().toString());
+        String nome = et_emg_nome.getText().toString();
+        int idade = Integer.parseInt(et_emg_idade.getText().toString());
+        int peso = Integer.parseInt(et_emg_peso.getText().toString());
+        String genero = et_emg_tipo.getText().toString();
+        String email = et_emg_email.getText().toString();
+
+        Paciente paciente = new Paciente(1, nome, idade, peso, genero, email);
+        dbHandler.addHandler(paciente);
+        //et_emg_comando.setText("");
+        et_emg_nome.setText("");
+        et_emg_idade.setText("");
+        et_emg_peso.setText("");
+        et_emg_tipo.setText("");
+        et_emg_email.setText("");
+    }
+    public void createTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.forceCreate();
+        Toast.makeText(this, "Tabela Criada" , Toast.LENGTH_LONG).show();
+
+    }
+    public void delTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.deleteTable();
+    }
+    public void existTable(View view){
+        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.checkTable();
+        Toast.makeText(this, dbHandler.checkTable() , Toast.LENGTH_SHORT).show();
+    }
+    private void loadViews() {
+        //et_emg_comando = (EditText) findViewById(R.id.et_emg_comando);
+        et_emg_nome = (EditText) findViewById(R.id.et_emg_nome);
+        et_emg_idade = (EditText) findViewById(R.id.et_emg_idade);
+        et_emg_peso = (EditText) findViewById(R.id.et_emg_peso);
+        et_emg_tipo = (EditText) findViewById(R.id.et_emg_tipo);
+        et_emg_email = (EditText) findViewById(R.id.et_emg_email);
+        bt_emg_update = (Button) findViewById(R.id.bt_emg_update);
+        bt_emg_load = (Button) findViewById(R.id.bt_emg_load);
+        //bt_emg_check = (Button) findViewById(R.id.bt_emg_check);
+        //bt_emg_create = (Button) findViewById(R.id.bt_emg_create);
+        //lst = (TextView) findViewById(R.id.lst);
+    }
     private void runThread() {
 
         new Thread() {
@@ -332,6 +320,13 @@ public class CadastroActivity extends AppCompatActivity{
             }
         }.start();
     }
+    public void setInfo(GetLeituraResponse info) {
+//        et_emg_comando.setText(info.comando);
+//        et_emg_nome.setText(info.nome);
+//        et_emg_idade.setText(info.idade);
+//        et_emg_peso.setText(info.peso);
+//        et_emg_tipo.setText(info.tipo);
 
+    }
 
 }

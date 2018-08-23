@@ -22,13 +22,13 @@ public class MyDBHandler extends SQLiteOpenHelper {
     //information of database
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "pacienteDB.db";
-    public static final String TABLE_NAME = "Paciente";
-    public static final String COLUMN_ID = "PacienteID";
-    public static final String COLUMN_NOME = "PacienteNome";
-    public static final String COLUMN_IDADE = "PacienteIdade";
-    public static final String COLUMN_PESO = "PacientePeso";
-    public static final String COLUMN_GENERO = "PacienteGenero";
-    public static final String COLUMN_EMAIL = "PacienteEmail";
+    public final String TABLE_NAME = "Paciente";
+    public final String COLUMN_ID = "PacienteID";
+    public final String COLUMN_NOME = "PacienteNome";
+    public final String COLUMN_IDADE = "PacienteIdade";
+    public final String COLUMN_PESO = "PacientePeso";
+    public final String COLUMN_GENERO = "PacienteGenero";
+    public final String COLUMN_EMAIL = "PacienteEmail";
     //initialize the database
     public MyDBHandler(Context context, String nome, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
@@ -47,6 +47,12 @@ public class MyDBHandler extends SQLiteOpenHelper {
          db.execSQL(CREATE_TABLE);
         Log.v("logSQL","CRIANDO A PORRA DO BD");
         createEmpty();
+    }
+    public Cursor getuser() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM " + TABLE_NAME + " ",
+                null);
+        return res;
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}

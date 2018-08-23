@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.DashPathEffect;
 import android.graphics.drawable.Drawable;
@@ -37,6 +38,13 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
+
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
 
 import static com.github.mikephil.charting.charts.Chart.LOG_TAG;
 
@@ -51,7 +59,7 @@ public class ConfigActivity extends AppCompatActivity {
     Button bt_iniciar_moni;
     Button bt_telemetria;
     ProgressDialog pd;
-
+    Cursor cursor;
 
     private static final int REQUEST_CODE = 3132;
 
@@ -63,6 +71,8 @@ public class ConfigActivity extends AppCompatActivity {
         setContentView(R.layout.activity_controle);
         // Carregue todas as views do seu layout
         loadViews();
+
+
         // Seta o que o botão vai fazer
         bt_iniciar_moni.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +93,7 @@ public class ConfigActivity extends AppCompatActivity {
                 //writeToFile(ConfigActivity.this,filename,fileContents);
                 //writeFileOnInternalStorage(ConfigActivity.this,filename,fileContents);
                 new JsonTask().execute("http://192.168.4.1/mestrado/edit");
+                //creatXlsx();
 
             }
 
@@ -100,6 +111,81 @@ public class ConfigActivity extends AppCompatActivity {
 
     }
 
+    private void creatXlsx(ArrayList<String> vals){
+        if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            // Asking for permission
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE);
+        }
+        Log.v("log", "Permission is granted");
+        MyDBHandler db = new MyDBHandler(this,null,null,1);
+        Cursor cursor = db.getuser();
+        File sd = Environment.getExternalStorageDirectory();
+        String directoryPath =
+                Environment.getExternalStorageDirectory()
+                        + File.separator
+                        + "LOGS"
+                        + File.separator;
+        String csvFile = "myData.xls";
+
+        File directory = new File(sd.getAbsolutePath());
+        //File directory = new File(directoryPath);
+        //create directory if not exist
+        if (!directory.isDirectory()) {
+            directory.mkdirs();
+        }
+        try {
+
+            //file path
+            File file = new File(directory, csvFile);
+            WorkbookSettings wbSettings = new WorkbookSettings();
+            wbSettings.setLocale(new Locale("pt", "BR"));
+            WritableWorkbook workbook = Workbook.createWorkbook(file, wbSettings);
+            //Excel sheet name. 0 represents first sheet
+            WritableSheet sheet = workbook.createSheet("userList", 0);
+            // column and row
+            sheet.addCell(new Label(0, 0, "Nome"));
+            sheet.addCell(new Label(1, 0, "Idade"));
+            sheet.addCell(new Label(2, 0, "Peso"));
+            sheet.addCell(new Label(3, 0, "Genero"));
+            sheet.addCell(new Label(4, 0, "Email"));
+            sheet.addCell(new Label(5, 0, "Dados"));
+            if (cursor.moveToFirst()) {
+                do {
+                    String nome = cursor.getString(cursor.getColumnIndex(db.COLUMN_NOME));
+                    String idade = cursor.getString(cursor.getColumnIndex(db.COLUMN_IDADE));
+                    String peso = cursor.getString(cursor.getColumnIndex(db.COLUMN_PESO));
+                    String genero = cursor.getString(cursor.getColumnIndex(db.COLUMN_GENERO));
+                    String email = cursor.getString(cursor.getColumnIndex(db.COLUMN_EMAIL));
+
+                    int i = cursor.getPosition() + 1;
+                    sheet.addCell(new Label(0, i, nome));
+                    sheet.addCell(new Label(1, i, idade));
+                    sheet.addCell(new Label(2, i, peso));
+                    sheet.addCell(new Label(3, i, genero));
+                    sheet.addCell(new Label(4, i, email));
+                    int c = 0, r= 0, cont = 0;
+
+                    for(String result : vals) {
+                        sheet.addCell(new Label(5 + c, i + r, result));
+                        r++;
+                        if(r == 60000){
+                            r = 0;
+                            c++;
+                        }
+                    }
+                } while (cursor.moveToNext());
+            }
+            //closing cursor
+            cursor.close();
+            workbook.write();
+            workbook.close();
+            Toast.makeText(getApplication(),
+                    "Data Exported in a Excel Sheet", Toast.LENGTH_SHORT).show();
+
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
     private void loadViews() {
         bt_iniciar_moni = (Button) findViewById(R.id.bt_iniciar_moni);
         bt_telemetria = (Button) findViewById(R.id.bt_telemetria);
@@ -252,22 +338,27 @@ public class ConfigActivity extends AppCompatActivity {
             String buffer = "";
             int i = 0;
             ArrayList<Entry> values = new ArrayList<Entry>();
+            ArrayList<String> vals = new ArrayList<String>();
 
             for(char res : result.toCharArray()){
                 if(res != ',')
                     buffer += res;
                 else{
                     values.add(new Entry(i, Float.parseFloat(buffer)));
+                    vals.add(buffer);
                     i++;
                     buffer = "";
                 }
             }
+
+            //writeToFile(result,GraficoActivity.this);
+            //writeToFile(result,"NOMETESTE3");
+            creatXlsx(vals);
+            //setData(values);
             if (pd.isShowing()){
                 pd.dismiss();
             }
-            //writeToFile(result,GraficoActivity.this);
-            writeToFile(result,"NOMETESTE3");
-            //setData(values);
+
         }
     }
 

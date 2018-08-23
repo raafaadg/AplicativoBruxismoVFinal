@@ -11,10 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189baa9f-7c2c-4fd6-895c-df72aea470d9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/AplicativoBruxismoVFinal.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_rafae_Desktop_AplicativoBruxismo___VFinal_app_libs_jxl_jar_unspecified_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/AplicativoBruxismo - VFinal.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sheets.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
@@ -22,10 +27,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_rafae_Desktop_AplicativoBruxismoVFinal_app_libs_GraphView_4_2_1_jar_unspecified_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_rafae_Desktop_AplicativoBruxismo___VFinal_app_libs_GraphView_4_2_1_jar_unspecified_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_rafae_Desktop_AplicativoBruxismoVFinal_app_libs_svg_android_jar_unspecified_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_rafae_Desktop_AplicativoBruxismo___VFinal_app_libs_svg_android_jar_unspecified_jar.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AplicativoBruxismo - VFinal.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/AplicativoBruxismoVFinal.iml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/br/com/monitoramento/bruxismo/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/br/com/monitoramento/bruxismo/R.java" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" />
@@ -132,23 +142,155 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity$6.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity$JsonTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity$JsonTask.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/constraint/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/constraint/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity$1$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CadastroActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/CompartilharActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$JsonTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity$JsonTask.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/ConfigActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MainActivity2.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MyDBHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MyDBHandler.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MyMarkerView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/MyMarkerView.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$integer.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$layout.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$menu.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$mipmap.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$styleable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/R$xml.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupDadosActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupDadosActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupOkActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupOkActivity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupStartActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/monitoramento/bruxismo/SetupStartActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IbWLDcvuXWQoXw5UtnxCh1ba904=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ftTUkbkThLxbzQXvZfzism1n9ZM=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6SE4E+ewFTY1J_v4MSEnB8hK100=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Tj2_nNbtakuAdoJLxr9uOe+n2a0=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/IbWLDcvuXWQoXw5UtnxCh1ba904=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/ftTUkbkThLxbzQXvZfzism1n9ZM=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/6SE4E+ewFTY1J_v4MSEnB8hK100=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Tj2_nNbtakuAdoJLxr9uOe+n2a0=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be-rBY/values-be-rBY.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs-rBA/values-bs-rBA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et-rEE/values-et-rEE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu-rES/values-eu-rES.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl-rES/values-gl-rES.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is-rIS/values-is-rIS.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te-rIN/values-te-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v13/values-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/0bi0tggCxcZtkLo2PLFoRAMYX5g=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/mhYxCBBTuVOLiRRt9jHnUbBiu3Q=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim_move_left_in_activity.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim_move_left_in_activity.xml.flat" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim_move_left_out_activity.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim_move_left_out_activity.xml.flat" />
@@ -317,126 +459,132 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/26.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/26.jar" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/27.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/27.jar" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/28.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/28.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/35.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/37.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/39.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/compat/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/constraint/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/constraint/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/constraint/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/constraint/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/coreui/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/coreutils/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/fragment/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/graphics/drawable/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/graphics/drawable/animated/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/mediacompat/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v4/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$anim.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$bool.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$integer.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/android/support/v7/appcompat/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/BuildConfig.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CadastroActivity$1$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CadastroActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CadastroActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CompartilharActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CompartilharActivity$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/CompartilharActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity$3.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity$4.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/ConfigActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/DemoBase.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/Grafico2Activity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoActivity$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$1$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/GraficoRealTimeActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$3.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$4.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$5.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$6.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2$3$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2$3.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MainActivity2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MyDBHandler.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/MyMarkerView.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/Paciente.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$anim.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$bool.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$integer.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$mipmap.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R$xml.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/SetupDadosActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/SetupOkActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/SetupOkActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/SetupStartActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/SetupStartActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/TimeGraficoActivity$1$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/TimeGraficoActivity$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/TimeGraficoActivity$JsonTask.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/TimeGraficoActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/APIError.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/ConnectionUtil.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/CustomRequest.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetEndereco/GetEndereco$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetEndereco/GetEndereco.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetEndereco/GetEnderecoInterface.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetEndereco/GetEnderecoResponse.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeitura$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeitura.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeituraInterface.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeituraResponse.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/ServiceGenerator$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/40/br/com/monitoramento/bruxismo/client/ServiceGenerator.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/41.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/43.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/45.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/46.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/47.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/48.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/49.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/50.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/compat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/constraint/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/constraint/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/constraint/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/constraint/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/coreui/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/coreutils/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/fragment/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/graphics/drawable/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/graphics/drawable/animated/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/mediacompat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v4/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/android/support/v7/appcompat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CadastroActivity$1$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CadastroActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CadastroActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CompartilharActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CompartilharActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/CompartilharActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/ConfigActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/DemoBase.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/Grafico2Activity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoActivity$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$1$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoRealTimeActivity$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/GraficoRealTimeActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2$3$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MainActivity2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MyDBHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/MyMarkerView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/Paciente.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$menu.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$mipmap.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R$xml.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/SetupDadosActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/SetupOkActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/SetupOkActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/SetupStartActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/SetupStartActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/TimeGraficoActivity$1$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/TimeGraficoActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/TimeGraficoActivity$JsonTask.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/TimeGraficoActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/APIError.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/ConnectionUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/CustomRequest.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetEndereco/GetEndereco$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetEndereco/GetEndereco.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetEndereco/GetEnderecoInterface.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetEndereco/GetEnderecoResponse.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeitura$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeitura.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeituraInterface.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/GetLeitura/GetLeituraResponse.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/ServiceGenerator$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/51/br/com/monitoramento/bruxismo/client/ServiceGenerator.dex" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compartilhar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compartilhar.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -462,35 +610,22 @@
       <file leaf-file-name="CadastroActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="96" column="41" lean-forward="false" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+            <state relative-caret-position="187">
+              <caret line="200" column="8" lean-forward="false" selection-start-line="200" selection-start-column="8" selection-end-line="201" selection-end-column="59" />
               <folding>
-                <element signature="e#1294#1302#0" expanded="true" />
-                <element signature="e#11467#12054#0" expanded="true" />
-                <element signature="e#11609#11841#0" expanded="true" />
-                <element signature="e#11840#11841#0" expanded="true" />
-                <element signature="e#12053#12054#0" expanded="true" />
+                <element signature="method#clear#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#efetivarCadastro#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#writeToFile#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#recordFile#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#DeleteRecursive#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#addPaciente#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#createTable#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#delTable#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#existTable#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#loadViews#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#runThread#0;class#CadastroActivity#0" expanded="false" />
+                <element signature="method#setInfo#0;class#CadastroActivity#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraficoRealTimeActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/GraficoRealTimeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2370">
-              <caret line="367" column="17" lean-forward="false" selection-start-line="367" selection-start-column="17" selection-end-line="367" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -498,25 +633,61 @@
       <file leaf-file-name="MyDBHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
               <folding>
-                <marker date="1534955456257" expanded="true" signature="4530:5072" ph="{...}" />
-                <marker date="1534955456257" expanded="false" signature="5127:5989" ph="{...}" />
-                <marker date="1534955456257" expanded="false" signature="6032:6695" ph="{...}" />
-                <marker date="1534955456257" expanded="true" signature="6725:6847" ph="{...}" />
-                <marker date="1534955456257" expanded="true" signature="6879:7136" ph="{...}" />
-                <marker date="1534955456257" expanded="true" signature="7190:7744" ph="{...}" />
+                <element signature="e#2726#3201#0" expanded="true" />
+                <element signature="e#3200#3201#0" expanded="true" />
+                <element signature="method#loadViews#0;class#ConfigActivity#0" expanded="false" />
+                <element signature="method#writeToFile#0;class#ConfigActivity#0" expanded="false" />
+                <element signature="method#writeToFile#1;class#ConfigActivity#0" expanded="false" />
+                <element signature="e#12582#12590#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_cadastro.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro.xml">
+      <file leaf-file-name="CompartilharActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2431">
-              <caret line="143" column="47" lean-forward="false" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+            <state relative-caret-position="425">
+              <caret line="203" column="56" lean-forward="false" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2228#2731#0" expanded="true" />
+                <element signature="e#2730#2731#0" expanded="true" />
+                <element signature="method#shareWhats#0;class#CompartilharActivity#0" expanded="false" />
+                <element signature="e#6698#6706#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="6602" column="0" lean-forward="false" selection-start-line="6602" selection-start-column="0" selection-end-line="6602" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_compartilhar.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_compartilhar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -526,6 +697,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -553,14 +731,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="AplicativoBruxismoVFinal" />
+              <option name="name" value="AplicativoBruxismo - VFinal" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="AplicativoBruxismoVFinal" />
+                <option name="name" value="AplicativoBruxismo - VFinal" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -578,7 +756,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'AplicativoBruxismoVFinal'." />
+                <option name="description" value="Displays the sub-projects of root project 'AplicativoBruxismo - VFinal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -628,7 +806,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'AplicativoBruxismoVFinal'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'AplicativoBruxismo - VFinal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -650,7 +828,7 @@
                 <option name="name" value="bundleAppClassesDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'AplicativoBruxismoVFinal' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'AplicativoBruxismo - VFinal' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -673,7 +851,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'AplicativoBruxismoVFinal'." />
+                <option name="description" value="Displays all dependencies declared in root project 'AplicativoBruxismo - VFinal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -754,7 +932,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'AplicativoBruxismoVFinal'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'AplicativoBruxismo - VFinal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -883,7 +1061,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'AplicativoBruxismoVFinal'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'AplicativoBruxismo - VFinal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -1184,12 +1362,12 @@
                 <option name="name" value="transformDexArchiveWithDexMergerForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'AplicativoBruxismoVFinal'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'AplicativoBruxismo - VFinal'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'AplicativoBruxismoVFinal'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'AplicativoBruxismo - VFinal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -1320,7 +1498,7 @@
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'AplicativoBruxismoVFinal'." />
+                <option name="description" value="Displays the properties of root project 'AplicativoBruxismo - VFinal'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2386,7 +2564,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="AplicativoBruxismoVFinal" />
+              <option name="name" value="AplicativoBruxismo - VFinal" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
@@ -2544,18 +2722,27 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/SendRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_compartilhar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -2576,48 +2763,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="AplicativoBruxismoVFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="AplicativoBruxismoVFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
-              <item name="AplicativoBruxismoVFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="AplicativoBruxismoVFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="bruxismo" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="AplicativoBruxismoVFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="AplicativoBruxismo - VFinal" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../greenDAO-master" />
-    <property name="device.picker.selection" value="Nexus_5X_API_27_x86" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/jxl.jar" />
+    <property name="device.picker.selection" value="Nexus_6_API_28" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2798,39 +2993,48 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39347827" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1652452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39347827" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2872,33 +3076,102 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java</url>
-          <line>126</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java</url>
+          <line>357</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java</url>
-          <line>270</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java</url>
+          <line>174</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="96" column="41" lean-forward="false" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+          <folding>
+            <element signature="method#clear#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#efetivarCadastro#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#recordFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#DeleteRecursive#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#addPaciente#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#createTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#delTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#existTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#loadViews#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#runThread#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#setInfo#0;class#CadastroActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/GraficoRealTimeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5559">
+          <caret line="367" column="17" lean-forward="false" selection-start-line="367" selection-start-column="17" selection-end-line="367" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="143" column="47" lean-forward="false" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="81" column="45" lean-forward="true" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
           <caret line="244" column="10" lean-forward="false" selection-start-line="244" selection-start-column="10" selection-end-line="244" selection-end-column="10" />
           <folding>
-            <element signature="e#1294#1302#0" expanded="true" />
-            <element signature="e#11467#12054#0" expanded="true" />
-            <element signature="e#11609#11841#0" expanded="true" />
-            <element signature="e#11840#11841#0" expanded="true" />
-            <element signature="e#12053#12054#0" expanded="true" />
+            <element signature="method#clear#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#efetivarCadastro#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#recordFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#DeleteRecursive#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#addPaciente#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#createTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#delTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#existTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#loadViews#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#runThread#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#setInfo#0;class#CadastroActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2918,14 +3191,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <marker date="1534955456257" expanded="true" signature="4530:5072" ph="{...}" />
-            <marker date="1534955456257" expanded="false" signature="5127:5989" ph="{...}" />
-            <marker date="1534955456257" expanded="false" signature="6032:6695" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="6725:6847" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="6879:7136" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="7190:7744" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2956,7 +3222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2964,53 +3229,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-221">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="96" column="41" lean-forward="false" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-          <folding>
-            <element signature="e#1294#1302#0" expanded="true" />
-            <element signature="e#11467#12054#0" expanded="true" />
-            <element signature="e#11609#11841#0" expanded="true" />
-            <element signature="e#11840#11841#0" expanded="true" />
-            <element signature="e#12053#12054#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <marker date="1534955456257" expanded="true" signature="4530:5072" ph="{...}" />
-            <marker date="1534955456257" expanded="false" signature="5127:5989" ph="{...}" />
-            <marker date="1534955456257" expanded="false" signature="6032:6695" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="6725:6847" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="6879:7136" ph="{...}" />
-            <marker date="1534955456257" expanded="true" signature="7190:7744" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="47" lean-forward="false" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/GraficoRealTimeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2370">
+        <state relative-caret-position="5559">
           <caret line="367" column="17" lean-forward="false" selection-start-line="367" selection-start-column="17" selection-end-line="367" selection-end-column="17" />
           <folding />
         </state>
@@ -3018,9 +3242,243 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+        <state relative-caret-position="442">
+          <caret line="92" column="63" lean-forward="false" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/jxl.jar!/jxl/WorkbookSettings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="100" column="31" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+          <folding>
+            <marker date="1256393464000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1256393464000" expanded="false" signature="127:285" ph="..." />
+            <marker date="1256393464000" expanded="true" signature="1784:4145" ph="{...}" />
+            <marker date="1256393464000" expanded="false" signature="4187:4198" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4222:4228" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4263:4274" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4300:4306" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4350:4361" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4387:4393" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4430:4441" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4469:4475" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4517:4528" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4557:4563" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4599:4610" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4633:4639" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4678:4689" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4715:4721" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4766:4777" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4800:4806" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4854:4865" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4891:4897" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="4944:4955" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="4989:4995" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5044:5055" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5091:5097" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5149:5160" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5199:5205" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5255:5266" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5303:5309" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5353:5364" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5395:5401" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5447:5458" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5491:5497" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5545:5556" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5586:5592" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5631:5642" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5686:5692" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5737:5748" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5789:5795" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5832:5843" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5859:5865" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5896:5907" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5926:5932" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="5965:5976" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="5997:6003" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="6044:6055" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6075:6081" ph=" }" />
+            <marker date="1256393464000" expanded="true" signature="6127:6521" ph="{...}" />
+            <marker date="1256393464000" expanded="false" signature="6555:6566" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6591:6597" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="6638:6649" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6672:6678" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="6727:6738" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6765:6771" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="6826:6837" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6874:6880" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="6918:6929" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="6958:6964" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7019:7030" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7063:7069" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7117:7128" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7163:7169" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7214:7225" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7258:7264" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7310:7321" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7355:7361" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7415:7426" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7459:7465" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7520:7531" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7565:7571" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7615:7626" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7657:7663" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7720:7731" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7766:7772" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="7825:7836" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="7876:7882" ph=" }" />
+            <marker date="1256393464000" expanded="true" signature="7945:8001" ph="{...}" />
+            <marker date="1256393464000" expanded="true" signature="8066:8127" ph="{...}" />
+            <marker date="1256393464000" expanded="true" signature="8184:8246" ph="{...}" />
+            <marker date="1256393464000" expanded="false" signature="8297:8308" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8337:8343" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8379:8390" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8413:8419" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8453:8464" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8485:8491" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8538:8549" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8574:8580" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8616:8627" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8650:8656" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8707:8718" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8747:8753" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="8794:8805" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="8833:8839" ph=" }" />
+            <marker date="1256393464000" expanded="true" signature="8901:8961" ph="{...}" />
+            <marker date="1256393464000" expanded="false" signature="8990:9001" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="9021:9027" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="9068:9079" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="9102:9108" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="9144:9155" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="9179:9185" ph=" }" />
+            <marker date="1256393464000" expanded="false" signature="9237:9248" ph=" { " />
+            <marker date="1256393464000" expanded="false" signature="9279:9285" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="147" column="26" lean-forward="false" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/SendRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/MyDBHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CadastroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="200" column="8" lean-forward="false" selection-start-line="200" selection-start-column="8" selection-end-line="201" selection-end-column="59" />
+          <folding>
+            <element signature="method#clear#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#efetivarCadastro#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#recordFile#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#DeleteRecursive#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#addPaciente#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#createTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#delTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#existTable#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#loadViews#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#runThread#0;class#CadastroActivity#0" expanded="false" />
+            <element signature="method#setInfo#0;class#CadastroActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_compartilhar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="332" column="0" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/ConfigActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+          <folding>
+            <element signature="e#2726#3201#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="true" />
+            <element signature="method#loadViews#0;class#ConfigActivity#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#ConfigActivity#0" expanded="false" />
+            <element signature="method#writeToFile#1;class#ConfigActivity#0" expanded="false" />
+            <element signature="e#12582#12590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="6602" column="0" lean-forward="false" selection-start-line="6602" selection-start-column="0" selection-end-line="6602" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoramento/bruxismo/CompartilharActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="203" column="56" lean-forward="false" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2228#2731#0" expanded="true" />
+            <element signature="e#2730#2731#0" expanded="true" />
+            <element signature="method#shareWhats#0;class#CompartilharActivity#0" expanded="false" />
+            <element signature="e#6698#6706#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

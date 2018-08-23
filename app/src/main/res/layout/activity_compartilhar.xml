@@ -19,6 +19,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/ic_gmail" />
+    <ImageView
+        android:id="@+id/im_share_gs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_sheets" />
 
     />
 </LinearLayout>
