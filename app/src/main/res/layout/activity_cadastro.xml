@@ -140,7 +140,7 @@
                 android:gravity="end"
                 android:layout_weight="0.5"
                 android:text="CREATE"
-
+                android:onClick="createTable"
                 android:textAlignment="center"/>
         </LinearLayout>
         <TextView

@@ -29,6 +29,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
     public final String COLUMN_PESO = "PacientePeso";
     public final String COLUMN_GENERO = "PacienteGenero";
     public final String COLUMN_EMAIL = "PacienteEmail";
+    public final String COLUMN_DADOS = "PacienteDados";
     //initialize the database
     public MyDBHandler(Context context, String nome, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
@@ -43,10 +44,11 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 COLUMN_IDADE + " LONG," +
                 COLUMN_PESO + " LONG," +
                 COLUMN_GENERO + " TEXT," +
-                COLUMN_EMAIL + " TEXT " + ")";
+                COLUMN_EMAIL + " TEXT," +
+                COLUMN_DADOS + " TEXT " + ")";
          db.execSQL(CREATE_TABLE);
         Log.v("logSQL","CRIANDO A PORRA DO BD");
-        createEmpty();
+        //createEmpty();
     }
     public Cursor getuser() {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -67,7 +69,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
                 COLUMN_IDADE + " LONG," +
                 COLUMN_PESO + " LONG," +
                 COLUMN_GENERO + " TEXT," +
-                COLUMN_EMAIL + " TEXT " + ")";
+                COLUMN_EMAIL + " TEXT," +
+                COLUMN_DADOS + " TEXT " + ")";
         db.execSQL(CREATE_TABLE);
         createEmpty();
     }
@@ -118,6 +121,9 @@ public class MyDBHandler extends SQLiteOpenHelper {
             String result_5 = cursor.getString(5);
             results.add(result_5);
 
+            String result_6 = cursor.getString(6);
+            //results.add(result_5);
+
             result += String.valueOf(result_0) + " " +
                     result_1 + " " +
                     result_2 + " " +
@@ -143,6 +149,18 @@ public class MyDBHandler extends SQLiteOpenHelper {
         values.put(COLUMN_EMAIL, paciente.getPacienteEmail());
         SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_NAME, null, values);
+        db.close();
+    }
+
+    public void addData(ArrayList<String> paciente) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        int count = 0;
+        for(String pacienteDados: paciente) {
+            values.put(COLUMN_DADOS, pacienteDados);
+            db.insert(TABLE_NAME, null, values);
+            count++;
+        }
         db.close();
     }
 

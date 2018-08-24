@@ -149,8 +149,8 @@ public class ConfigActivity extends AppCompatActivity {
             sheet.addCell(new Label(3, 0, "Genero"));
             sheet.addCell(new Label(4, 0, "Email"));
             sheet.addCell(new Label(5, 0, "Dados"));
-            if (cursor.moveToFirst()) {
-                do {
+           // if (cursor.moveToFirst()) {
+                //do {
                     String nome = cursor.getString(cursor.getColumnIndex(db.COLUMN_NOME));
                     String idade = cursor.getString(cursor.getColumnIndex(db.COLUMN_IDADE));
                     String peso = cursor.getString(cursor.getColumnIndex(db.COLUMN_PESO));
@@ -172,8 +172,8 @@ public class ConfigActivity extends AppCompatActivity {
                             r = 0;
                             c++;
                         }
-                    }
-                } while (cursor.moveToNext());
+                    //}
+                //} //while (cursor.moveToNext());
             }
             //closing cursor
             cursor.close();
@@ -353,7 +353,9 @@ public class ConfigActivity extends AppCompatActivity {
 
             //writeToFile(result,GraficoActivity.this);
             //writeToFile(result,"NOMETESTE3");
-            creatXlsx(vals);
+            MyDBHandler db = new MyDBHandler(getApplicationContext(),null,null,1);
+            db.addData(vals);
+            //creatXlsx(vals);
             //setData(values);
             if (pd.isShowing()){
                 pd.dismiss();

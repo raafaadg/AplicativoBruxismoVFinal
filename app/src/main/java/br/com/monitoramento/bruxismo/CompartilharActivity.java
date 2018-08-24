@@ -64,8 +64,8 @@ public class CompartilharActivity extends AppCompatActivity {
         im_share_wa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //getImage();
-                shareWhats();
+                getImage();
+                //shareWhats();
             }
         });
         im_share_gm.setOnClickListener(new View.OnClickListener() {
