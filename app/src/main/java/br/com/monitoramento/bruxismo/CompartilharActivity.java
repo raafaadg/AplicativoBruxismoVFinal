@@ -1,5 +1,6 @@
 package br.com.monitoramento.bruxismo;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -34,6 +35,8 @@ import java.util.Iterator;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
+import static android.os.Process.THREAD_PRIORITY_MORE_FAVORABLE;
 
 
 /**
@@ -45,8 +48,10 @@ public class CompartilharActivity extends AppCompatActivity {
     ImageView im_share_wa;
     ImageView im_share_gm;
     ImageView im_share_gs;
+    String results = "";
     Context context;
     Uri selectedImagePath;
+    boolean gmail = false, whats = false;
     private static CompartilharActivity parent;
 
     private static final int REQUEST_CODE = 3132;
@@ -64,15 +69,15 @@ public class CompartilharActivity extends AppCompatActivity {
         im_share_wa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                whats = true;
                 getImage();
-                //shareWhats();
             }
         });
         im_share_gm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                shareGMail("raafaadg@gmail.com","Dados Aquisição","Segue em" +
-                        "anexo arquivo contendo dados da aquicição");
+                gmail = true;
+                getImage();
             }
         });
         im_share_gs.setOnClickListener(new View.OnClickListener() {
@@ -80,12 +85,15 @@ public class CompartilharActivity extends AppCompatActivity {
             public void onClick(View v) {
                 MyDBHandler dbHandler = new MyDBHandler(CompartilharActivity.this, null, null, 1);
                 ArrayList<String> result = dbHandler.loadHandler();
-                String results = "";
+                results = "";
                 for(String aux:result) {
                     results += aux;
                     results += ",";
                 }
-                new SendRequest().execute(results);
+                //new SendRequest().execute();
+                //new SendRequest().doInBackground();
+                new SendRequest().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                //new SendRequest().execute();
             }
         });
 
@@ -93,8 +101,16 @@ public class CompartilharActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == MY_INTENT_CLICK) selectedImagePath = data.getData();
-        Log.d("URI",selectedImagePath.toString());
+        if (requestCode == MY_INTENT_CLICK)
+            if(data != null) {
+                selectedImagePath = data.getData();
+                if(gmail)
+                    shareGMail("raafaadg@gmail.com","Dados Aquisição","Segue em " +
+                        "anexo arquivo contendo dados da aquicição");
+                if (whats)
+                    shareWhats();
+            }
+        //Log.d("URI",selectedImagePath.toString());
     }
 
     private void loadViews() {
@@ -108,7 +124,7 @@ public class CompartilharActivity extends AppCompatActivity {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
             waIntent.setType("text/plain");
-            String text = "YOUR TEXT HERE";
+            String text = "Estou compartilhando os dados obtidos";
 
             PackageInfo info = pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
             //Check if package exists or not. If not then code
@@ -116,23 +132,24 @@ public class CompartilharActivity extends AppCompatActivity {
             waIntent.setPackage("com.whatsapp");
 
             waIntent.putExtra(Intent.EXTRA_TEXT, text);
+            waIntent.putExtra(Intent.EXTRA_STREAM,selectedImagePath);
             startActivity(Intent.createChooser(waIntent, "Share with"));
 
         } catch (PackageManager.NameNotFoundException e) {
             Toast.makeText(this, "WhatsApp not Installed", Toast.LENGTH_SHORT)
                     .show();
+        }finally {
+            whats = false;
         }
     }
 
     public void shareGMail(String email, String subject, String content) {
 
-        getImage();
-
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.putExtra(Intent.EXTRA_EMAIL, email);
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
         emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, content);
-        emailIntent.putExtra(Intent.EXTRA_STREAM,Uri.parse("content://com.android.externalstorage.documents/document/primary%3ALOGS%2FNOMETESTE3.txt"));
+        //emailIntent.putExtra(Intent.EXTRA_STREAM,Uri.parse("content://com.android.externalstorage.documents/document/primary%3ALOGS%2FNOMETESTE3.txt"));
         emailIntent.putExtra(Intent.EXTRA_STREAM,selectedImagePath);
         final PackageManager pm = getPackageManager();
         final List<ResolveInfo> matches = pm.queryIntentActivities(emailIntent, 0);
@@ -144,51 +161,49 @@ public class CompartilharActivity extends AppCompatActivity {
             emailIntent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
         emailIntent.setType("message/rfc822");
         startActivity(emailIntent);
+        gmail =false;
     }
 
     private void getImage() {
-        MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+        //MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
 
         Intent intent = new Intent(
                 Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
-        //intent.setType("image/*");
+        intent.setType("text/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
 
-        startActivityForResult(
-                Intent.createChooser(intent, "Complete action using"),
-                MY_INTENT_CLICK);
+        try {
+            startActivityForResult(
+                    Intent.createChooser(intent, "Complete action using"),
+                    MY_INTENT_CLICK);
+        }catch (Exception e) {
+            e.getMessage();
+        }
     }
 
-    public class SendRequest extends AsyncTask<String, Void, String> {
+    public class SendRequest extends AsyncTask<Void, Void, String> {
 
 
         protected void onPreExecute(){
-
+            Log.v("PreExec","Entrou na pré execução");
+            Thread.currentThread().setPriority(THREAD_PRIORITY_BACKGROUND + THREAD_PRIORITY_MORE_FAVORABLE);
         }
 
-        protected String doInBackground(String... results) {
+        protected String doInBackground(Void... resultss) {
 
             try{
 
-                URL url = new URL("https://script.google.com/macros/s/AKfycbwwFPcE_5aSqtaNOSANNlA-vuvRvMMbUwSRR-c46iMpwOSEwTos/exec");
-                //https://script.google.com/macros/s/AKfycbwwFPcE_5aSqtaNOSANNlA-vuvRvMMbUwSRR-c46iMpwOSEwTos/exec
-                // https://script.google.com/macros/s/AKfycbyuAu6jWNYMiWt9X5yp63-hypxQPlg5JS8NimN6GEGmdKZcIFh0/exec
+                URL url = new URL("https://script.google.com/macros/s/" +
+                        "AKfycbwwFPcE_5aSqtaNOSANNlA-vuvRvMMbUwSRR-c46iMpwOSEwTos/exec");
                 JSONObject postDataParams = new JSONObject();
 
-                //int i;
-                //for(i=1;i<=70;i++)
-
-
-                //    String usn = Integer.toString(i);
-
                 String id = "1KIja0pt1IegzG4stnzRZkQ8xoVQuQyUUtHIr_Gno2rY";
-                //String id= "1hYZGyo5-iFpuwofenZ6s-tsaFPBQRSx9HQYydigA4Dg";
 
                 ArrayList<String> result = new ArrayList<String>();
                 String buffer = "";
-                for(char res : results[0].toCharArray()){
+                for(char res : results.toCharArray()){
                     if(res != ',')
                         buffer += res;
                     else{
@@ -203,9 +218,6 @@ public class CompartilharActivity extends AppCompatActivity {
                 postDataParams.put("genero", result.get(3));
                 postDataParams.put("email", result.get(4));
                 postDataParams.put("sheet", "Sheet1");
-
-
-
 
                 Log.e("params",postDataParams.toString());
 
@@ -284,6 +296,85 @@ public class CompartilharActivity extends AppCompatActivity {
         }
         return result.toString();
     }
+
+    public void addSheet(){
+        String msg="";
+
+        try{
+
+            URL url = new URL("https://script.google.com/macros/s/" +
+                    "AKfycbwwFPcE_5aSqtaNOSANNlA-vuvRvMMbUwSRR-c46iMpwOSEwTos/exec");
+            JSONObject postDataParams = new JSONObject();
+
+            String id = "1KIja0pt1IegzG4stnzRZkQ8xoVQuQyUUtHIr_Gno2rY";
+
+            ArrayList<String> result = new ArrayList<String>();
+            String buffer = "";
+            for(char res : results.toCharArray()){
+                if(res != ',')
+                    buffer += res;
+                else{
+                    result.add(buffer);
+                    buffer = "";
+                }
+            }
+            postDataParams.put("id", id);
+            postDataParams.put("nome", result.get(0));
+            postDataParams.put("idade", result.get(1));
+            postDataParams.put("peso", result.get(2));
+            postDataParams.put("genero", result.get(3));
+            postDataParams.put("email", result.get(4));
+            postDataParams.put("sheet", "Sheet1");
+
+            Log.e("params",postDataParams.toString());
+
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setReadTimeout(15000 /* milliseconds */);
+            conn.setConnectTimeout(15000 /* milliseconds */);
+            conn.setRequestMethod("POST");
+            conn.setDoInput(true);
+            conn.setDoOutput(true);
+
+            OutputStream os = conn.getOutputStream();
+            BufferedWriter writer = new BufferedWriter(
+                    new OutputStreamWriter(os, "UTF-8"));
+            writer.write(getPostDataString(postDataParams));
+
+            writer.flush();
+            writer.close();
+            os.close();
+
+            int responseCode=conn.getResponseCode();
+
+            if (responseCode == HttpsURLConnection.HTTP_OK) {
+
+                BufferedReader in=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                StringBuffer sb = new StringBuffer("");
+                String line="";
+
+                while((line = in.readLine()) != null) {
+
+                    sb.append(line);
+                    break;
+                }
+
+                in.close();
+                msg = sb.toString();
+
+            }
+            else {
+                msg = new String("false : "+responseCode);
+            }
+        }
+        catch(Exception e){
+            msg = new String("Exception: " + e.getMessage());
+        }
+
+        Toast.makeText(getApplicationContext(), msg,
+                Toast.LENGTH_LONG).show();
+
+    }
+
 }
 
 
