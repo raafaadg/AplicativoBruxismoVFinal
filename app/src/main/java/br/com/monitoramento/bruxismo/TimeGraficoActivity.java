@@ -42,6 +42,7 @@ import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.SocketException;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.sql.Time;
         import java.text.SimpleDateFormat;
@@ -60,11 +61,7 @@ public class TimeGraficoActivity extends DemoBase implements
     private long startTime;
     private long stopTime ;
     private long elapsedTime ;
-    ProgressDialog pd;
-
-    String lText;
     String messageStr="send";
-    int msg_length=messageStr.length();
     private static final int UDP_SERVER_PORT = 4210;
     private static final int MAX_UDP_DATAGRAM_LEN = 10;
 
@@ -213,10 +210,9 @@ public class TimeGraficoActivity extends DemoBase implements
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-//                                new JsonTask().execute("http://192.168.4.1/mestrado/json3");
-//                                new GetLeitura(TimeGraficoActivity.this);
                                 startTime = System.currentTimeMillis();
                                 getUDP();
+                                //new ClientSendAndListen().run();
                             }
                         });
                         Thread.sleep(1000*1/5);
@@ -236,28 +232,10 @@ public class TimeGraficoActivity extends DemoBase implements
 
         try {
             ds = new DatagramSocket(UDP_SERVER_PORT);
-//            InetAddress local = InetAddress.getByName("192.168.4.1");
-//            DatagramPacket p = new DatagramPacket(message, msg_length,local,UDP_SERVER_PORT);
-//            ds.send(p);
-
             ds.receive(dp);
             Log.i("UDP packet received", new String(dp.getData()));
             addEntry(Float.parseFloat(new String(dp.getData())));
 
-
-//            lText = new String(dp.getData());
-//            int index1 = lText.indexOf(":[");
-//            int index2 = lText.indexOf("]}");
-//            lText = lText.substring(index1+2,index2);
-//            String buffer = "";
-//            for(char res : lText.toCharArray()){
-//                if(res != ',')
-//                    buffer += res;
-//                else{
-//                    addEntry(Float.parseFloat(buffer));
-//                    buffer = "";
-//                }
-//            }
             stopTime = System.currentTimeMillis();
             elapsedTime = stopTime - startTime;
             Log.e("Tempo Exeução", String.valueOf(elapsedTime));
@@ -270,91 +248,38 @@ public class TimeGraficoActivity extends DemoBase implements
         }
     }
 
-private class JsonTask extends AsyncTask<String, String, String> {
-
-    protected void onPreExecute() {
-        super.onPreExecute();
-
-//            pd = new ProgressDialog(TimeGraficoActivity.this);
-//            pd.setMessage("Please wait");
-//            pd.setCancelable(false);
-//            pd.show();
-    }
-
-    protected String doInBackground(String... params) {
-
-
-        HttpURLConnection connection = null;
-        BufferedReader reader = null;
-
-        try {
-            URL url = new URL(params[0]);
-            connection = (HttpURLConnection) url.openConnection();
-            connection.connect();
-
-
-            InputStream stream = connection.getInputStream();
-
-            reader = new BufferedReader(new InputStreamReader(stream));
-
-            StringBuffer buffer = new StringBuffer();
-            String line = "";
-
-            while ((line = reader.readLine()) != null) {
-                buffer.append(line+"\n");
-                Log.d("Response: ", "> " + line);   //here u ll get whole response...... :-)
-            }
-            //Log.d("Ver se funfa: ", buffer.cep.toString());   //here u ll get whole response...... :-)
-
-            return buffer.toString();
-
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (connection != null) {
-                connection.disconnect();
-            }
+    public class ClientSendAndListen implements Runnable {
+        @Override
+        public void run() {
+            boolean run = true;
             try {
-                if (reader != null) {
-                    reader.close();
-                }
-            } catch (IOException e) {
+                DatagramSocket udpSocket = new DatagramSocket(UDP_SERVER_PORT);
+                InetAddress serverAddr = InetAddress.getByName("192.168.1.1");
+                byte[] buf = ("REQ").getBytes();
+                DatagramPacket packet = new DatagramPacket(buf, buf.length,serverAddr, UDP_SERVER_PORT);
+                udpSocket.send(packet);
+                    try {
+                        byte[] message = new byte[8000];
+                        DatagramPacket p = new DatagramPacket(message,message.length);
+                        Log.i("UDP client: ", "about to wait to receive");
+                        udpSocket.setSoTimeout(10000);
+                        udpSocket.receive(p);
+                        addEntry(Float.parseFloat(new String(p.getData())));
+                        String text = new String(message, 0, p.getLength());
+                        Log.d("Received text", text);
+                    } catch (IOException e) {
+                        Log.e(" UDP client IOException", "error: ", e);
+                        run = false;
+                        udpSocket.close();
+                    }
+            } catch (SocketException e) {
+                Log.e("Socket Open:", "Error:", e);
+            }catch (IOException e){
                 e.printStackTrace();
             }
         }
-        return null;
     }
 
-    @Override
-    protected void onPostExecute(String result) {
-        super.onPostExecute(result);
-
-//        txtJson.setText(result);
-        int index1 = result.indexOf(":[");
-        int index2 = result.indexOf("]}");
-        result = result.substring(index1+2,index2);
-        String buffer = "";
-        for(char res : result.toCharArray()){
-            if(res != ',')
-                buffer += res;
-            else{
-                //Log.d("Valores Partidos: ", buffer);
-                //Log.d("Valor Gráfico", buffer);
-                addEntry(Float.parseFloat(buffer));
-                buffer = "";
-            }
-        }
-        //stopTime = System.currentTimeMillis();
-        //elapsedTime = stopTime - startTime;
-        //Log.d("Tempo de Exibição", String.valueOf(elapsedTime));
-//        if (pd.isShowing()){
-//            pd.dismiss();
-//        }
-    }
-}
     @Override
     public void onValueSelected(Entry e, Highlight h) {
         Log.i("Entry selected", e.toString());

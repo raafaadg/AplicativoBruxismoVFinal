@@ -19,6 +19,13 @@
         android:text="OFF GPIO 4" />
 
     <TextView
+        android:id="@+id/sendTS"
+        style="@style/CategoryStyle"
+        android:background="#3977ce"
+        android:layout_marginBottom="20dp"
+        android:text="Enviar TimeStamp" />
+
+    <TextView
         android:id="@+id/tvJsonItem"
         android:layout_width="match_parent"
         android:layout_height="184dp" />

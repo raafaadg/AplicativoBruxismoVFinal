@@ -2,11 +2,14 @@ package br.com.monitoramento.bruxismo;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.DashPathEffect;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -16,6 +19,7 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
@@ -23,6 +27,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.ChartTouchListener;
@@ -38,15 +43,23 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Grafico2Activity extends AppCompatActivity implements OnChartGestureListener,
         OnChartValueSelectedListener {
 
+    public static Uri selectedImagePath;
     private LineChart mChart;
     private ProgressDialog pd;
+    public static String nomeAbrirArquivo;
     //public Grafico2Activity(Context context) {
      //   super();
     //}
@@ -55,7 +68,7 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         pd = new ProgressDialog(Grafico2Activity.this);
-        pd.setMessage("Favor Esperar! Abrindo dados do selecionados");
+        pd.setMessage("Favor Esperar! Abrindo dados selecionados");
         pd.setCancelable(false);
         pd.show();
         setContentView(R.layout.activity_grafico);
@@ -90,37 +103,112 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
 
-        // x-axis limit line
-        LimitLine llXAxis = new LimitLine(10f, "Index 10");
-        llXAxis.setLineWidth(4f);
-        llXAxis.enableDashedLine(10f, 10f, 0f);
-        llXAxis.setLabelPosition(LimitLine.LimitLabelPosition.LEFT_BOTTOM);
-        llXAxis.setTextSize(10f);
+
+        String myData = "";
+        // String aux = selectedImagePath.getPath();
+        String directoryPath =
+                Environment.getExternalStorageDirectory()
+                        + File.separator
+                        + "LOGS"
+                        + File.separator;
+        File myExternalFile = new File(directoryPath, nomeAbrirArquivo);
+        //File myExternalFile = new File(getPath(selectedImagePath));
+
+
+        try {
+
+            FileInputStream fis = new FileInputStream(myExternalFile);
+            DataInputStream in = new DataInputStream(fis);
+            BufferedReader br =
+                    new BufferedReader(new InputStreamReader(in));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                myData = myData + strLine;
+            }
+            String xbuffer = "";
+            String ybuffer = "";
+            boolean xaux = false;
+            boolean yaux = false;
+            String buffer = "";
+            int i = 0;
+
+            ArrayList<Entry> values = new ArrayList<Entry>();
+            //x16-Aug-2018 22:00:00
+            char[] contr = myData.toCharArray();
+            if (contr[0] == 'x' || contr[0] == 'y'){
+                for(char res : myData.toCharArray()) {
+                    if (res != '.') {
+                        if (res != ',') {
+                            if (res == 'x') {
+                                xaux = true;
+                                yaux = false;
+                            } else if (res == 'y') {
+                                xaux = false;
+                                yaux = true;
+                            } else {
+                                if (xaux)
+                                    xbuffer += res;
+                                if (yaux)
+                                    ybuffer += res;
+                            }
+                        } else {
+
+                            //Timestamp ts = new Timestamp(Long.parseLong(xbuffer));
+                            Timestamp ts = Timestamp.valueOf(xbuffer);
+                            long timeinmilli = ts.getTime();
+                            long now = TimeUnit.MILLISECONDS.toHours(timeinmilli);
+
+                            Log.v("TS", ts.toString());
+                            values.add(new Entry(now,
+                                    Integer.parseInt(ybuffer)
+                            ));
+                            i++;
+                            xbuffer = "";
+                            ybuffer = "";
+                        }
+                    }
+                }
+            }else{
+
+                for(char ress : myData.toCharArray()){
+                    if(ress != ',')
+                        buffer += ress;
+                    else{
+                        values.add(new Entry(i, Float.parseFloat(buffer)));
+                        i++;
+                        buffer = "";
+                    }
+                }
+
+            }
+
+            //writeToFile(result,GraficoActivity.this);
+            in.close();
+            setData(values);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mChart.invalidate();
+
 
         XAxis xAxis = mChart.getXAxis();
         xAxis.enableGridDashedLine(10f, 10f, 0f);
+        xAxis.setValueFormatter(new IAxisValueFormatter() {
 
-        LimitLine ll1 = new LimitLine(150f, "Upper Limit");
-        ll1.setLineWidth(4f);
-        ll1.enableDashedLine(10f, 10f, 0f);
-        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
-        ll1.setTextSize(10f);
-        // ll1.setTypeface(tf);
+            private SimpleDateFormat mFormat = new SimpleDateFormat("dd MM HH:mm");
 
-        LimitLine ll2 = new LimitLine(-30f, "Lower Limit");
-        ll2.setLineWidth(4f);
-        ll2.enableDashedLine(10f, 10f, 0f);
-        ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_BOTTOM);
-        ll2.setTextSize(10f);
-        // ll2.setTypeface(tf);
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+
+                long millis = TimeUnit.HOURS.toMillis((long) value);
+                return mFormat.format(new Date(millis));
+            }
+        });
 
         YAxis leftAxis = mChart.getAxisLeft();
         leftAxis.removeAllLimitLines(); // reset all limit lines to avoid overlapping lines
-        leftAxis.addLimitLine(ll1);
-        leftAxis.addLimitLine(ll2);
         leftAxis.setAxisMaximum(200f);
         leftAxis.setAxisMinimum(-50f);
-        //leftAxis.setYOffset(20f);
         leftAxis.enableGridDashedLine(10f, 10f, 0f);
         leftAxis.setDrawZeroLine(false);
 
@@ -130,8 +218,8 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
         mChart.getAxisRight().setEnabled(false);
 
 
-        mChart.animateX(2500);
-        mChart.invalidate();
+        mChart.animateX(250);
+
 
         // get the legend (only possible after setting data)
         Legend l = mChart.getLegend();
@@ -139,51 +227,9 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
         // modify the legend ...
         l.setForm(Legend.LegendForm.LINE);
 
-        // // dont forget to refresh the drawing
-         mChart.invalidate();
-         String myData = "";
-        String directoryPath =
-                Environment.getExternalStorageDirectory()
-                        + File.separator
-                        + "LOGS"
-                        + File.separator;
-        File myExternalFile = new File(directoryPath, "NOMETESTE2.txt");
-
-        try {
-            FileInputStream fis = new FileInputStream(myExternalFile);
-            DataInputStream in = new DataInputStream(fis);
-            BufferedReader br =
-                    new BufferedReader(new InputStreamReader(in));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                myData = myData + strLine;
-            }
-            String buffer = "";
-            int i = 0;
-            ArrayList<Entry> values = new ArrayList<Entry>();
-
-            for(char res : myData.toCharArray()){
-                if(res != ',')
-                    buffer += res;
-                else{
-                    //Log.d("Valores Partidos: ", buffer);
-//                    addEntry(Float.parseFloat(buffer)/10);
-                    values.add(new Entry(i, Float.parseFloat(buffer)));
-                    i++;
-                    buffer = "";
-                }
-            }
-
-            //writeToFile(result,GraficoActivity.this);
-            setData(values);
-            in.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //inputText.setText(myData);
     }
 
-    @Override
+        @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
     }
@@ -348,15 +394,6 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
 //    private void setData(int count, float range) {
     private void setData(ArrayList<Entry> values) {
 
-//        ArrayList<Entry> values = new ArrayL]ist<Entry>();
-
-//        for (int i = 0; i < count; i++) {
-//
-//            float val = (float) (Math.random() * range) + 3;
-////            values.add(new Entry(i, val, getResources().getDrawable(R.drawable.star)));
-//            values.add(new Entry(i, val));
-//        }
-
         LineDataSet set1;
 
         if (mChart.getData() != null &&
@@ -372,14 +409,12 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
             set1.setDrawIcons(false);
 
             // set the line to be drawn like this "- - - - - -"
-            set1.enableDashedLine(10f, 5f, 0f);
-            set1.enableDashedHighlightLine(10f, 5f, 0f);
             set1.setColor(Color.BLACK);
             set1.setCircleColor(Color.BLACK);
             set1.setLineWidth(1f);
-            set1.setCircleRadius(3f);
             set1.setDrawCircleHole(false);
             set1.setValueTextSize(9f);
+            set1.setDrawCircles(false);
             set1.setDrawFilled(false);
             set1.setFormLineWidth(1f);
             set1.setFormLineDashEffect(new DashPathEffect(new float[]{10f, 5f}, 0f));

@@ -1,15 +1,19 @@
 package br.com.monitoramento.bruxismo;
 
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,10 +22,11 @@ import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.HttpURLConnection;
-import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.SocketException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeitura;
 import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeituraResponse;
@@ -30,6 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     TextView btnHit;
     TextView btnOff;
+    TextView sendHTTP;
     TextView txtJson;
     ProgressDialog pd;
     String lText;
@@ -45,6 +51,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         btnHit = (TextView) findViewById(R.id.btnHit);
         btnOff = (TextView) findViewById(R.id.btnOff);
+        sendHTTP = (TextView) findViewById(R.id.sendTS);
         txtJson = (TextView) findViewById(R.id.tvJsonItem);
 
         btnHit.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +80,15 @@ public class MainActivity2 extends AppCompatActivity {
                 pd.show();
             }
         });
+
+        sendHTTP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               tryHTTP("http://192.168.4.1/mestrado/ts");
+            }
+        });
     }
+
     void runUdpServer(){
         byte[] lMsg = new byte[MAX_UDP_DATAGRAM_LEN];
         byte[] message = messageStr.getBytes();
@@ -112,6 +127,41 @@ public class MainActivity2 extends AppCompatActivity {
             ds.close();
         }
 
+    }
+
+    public void tryHTTP(String url){
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        StringRequest putRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        // response
+                        txtJson.setText(response);
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        txtJson.setText(error.toString());
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<String, String>();
+                params.put("Timestamp", String.valueOf(System.currentTimeMillis()));
+
+                return params;
+            }
+
+        };
+
+        queue.add(putRequest);
     }
 
 

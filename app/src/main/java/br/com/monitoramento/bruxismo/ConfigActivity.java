@@ -2,34 +2,28 @@ package br.com.monitoramento.bruxismo;
 
 import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Color;
-import android.graphics.DashPathEffect;
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
-import com.github.mikephil.charting.utils.Utils;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -46,13 +40,12 @@ import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 
-import static com.github.mikephil.charting.charts.Chart.LOG_TAG;
-
 /**
  * Created by rafae on 08/11/2017.
  */
 
-public class ConfigActivity extends AppCompatActivity {
+public class ConfigActivity extends AppCompatActivity implements ArquivoDialogListener,
+        SpinnerListener {
 
     Button bt_salvar;
     Button bt_abrir;
@@ -60,8 +53,12 @@ public class ConfigActivity extends AppCompatActivity {
     Button bt_telemetria;
     ProgressDialog pd;
     Cursor cursor;
+    EditText input;
+    String nomeArquivo;
 
     private static final int REQUEST_CODE = 3132;
+    private static final int MY_INTENT_CLICK = 23122;
+
 
 
     @Override
@@ -83,35 +80,90 @@ public class ConfigActivity extends AppCompatActivity {
         bt_telemetria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ConfigActivity.this, MainActivity2.class));
+                startActivity(new Intent(ConfigActivity.this, SetupDadosActivity.class));
             }
         });
+
+
         bt_salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(ConfigActivity.this, MainActivity2.class));
-                //writeToFile(ConfigActivity.this,filename,fileContents);
-                //writeFileOnInternalStorage(ConfigActivity.this,filename,fileContents);
-                new JsonTask().execute("http://192.168.4.1/mestrado/edit");
-                //creatXlsx();
+                openDialog();
 
             }
-
         });
 
         bt_abrir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(ConfigActivity.this, MainActivity2.class));
-                //writeToFile(ConfigActivity.this,filename,fileContents);
-                //writeFileOnInternalStorage(ConfigActivity.this,filename,fileContents);
-                startActivity(new Intent(ConfigActivity.this,Grafico2Activity.class));
+
+                File sdCardRoot = Environment.getExternalStorageDirectory();
+                File yourDir = new File(sdCardRoot, "LOGS");
+                ArrayList<String> name = new ArrayList<String>();
+                yourDir.listFiles();
+                for (File f : yourDir.listFiles())
+                    if (f.isFile())
+                        name.add(f.getName());
+                SpinnerActivity.spinnerData = name;
+                //name.add("dadosFiltrados.txt");
+                //SpinnerActivity.spinnerData = name;
+                openSpinner();
             }
         });
 
     }
 
-    private void creatXlsx(ArrayList<String> vals){
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == MY_INTENT_CLICK)
+            if(data != null) {
+               Grafico2Activity.selectedImagePath = data.getData();
+
+            }
+    }
+
+    private void getImage() {
+        //MyDBHandler dbHandler = new MyDBHandler(this, null, null, 1);
+
+        Intent intent = new Intent(
+                Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+        //intent.setType("text/xls");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        try {
+            startActivityForResult(
+                    Intent.createChooser(intent, "Complete action using"),
+                    MY_INTENT_CLICK);
+        }catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+    public void openDialog(){
+        ArquivoDialog arquivoDialog = new ArquivoDialog();
+        arquivoDialog.show(getSupportFragmentManager(), "Salvar nome do Arquivo");
+    }
+
+    public void openSpinner(){
+        SpinnerActivity spinner = new SpinnerActivity();
+        spinner.show(getSupportFragmentManager(), "Selecione o arquivo que deseja abrir");
+    }
+
+    @Override
+    public void applyTexts(String nomeArquivo) {
+        this.nomeArquivo = nomeArquivo;
+        new JsonTask().execute("http://192.168.4.1/mestrado/edit");
+    }
+
+    @Override
+    public void applySpinner(String nomeArquivo) {
+        Grafico2Activity.nomeAbrirArquivo = nomeArquivo;
+        startActivity(new Intent(ConfigActivity.this,Grafico2Activity.class));
+    }
+
+    private void creatXlsx(ArrayList<String> vals,String nomeArquivo){
         if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             // Asking for permission
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE);
@@ -120,15 +172,10 @@ public class ConfigActivity extends AppCompatActivity {
         MyDBHandler db = new MyDBHandler(this,null,null,1);
         Cursor cursor = db.getuser();
         File sd = Environment.getExternalStorageDirectory();
-        String directoryPath =
-                Environment.getExternalStorageDirectory()
-                        + File.separator
-                        + "LOGS"
-                        + File.separator;
-        String csvFile = "myData.xls";
 
-        File directory = new File(sd.getAbsolutePath());
-        //File directory = new File(directoryPath);
+        String csvFile = nomeArquivo+".xls";
+
+        File directory = new File(sd.getAbsolutePath(),"LOGS");
         //create directory if not exist
         if (!directory.isDirectory()) {
             directory.mkdirs();
@@ -151,6 +198,7 @@ public class ConfigActivity extends AppCompatActivity {
             sheet.addCell(new Label(5, 0, "Dados"));
            // if (cursor.moveToFirst()) {
                 //do {
+            cursor.moveToFirst();
                     String nome = cursor.getString(cursor.getColumnIndex(db.COLUMN_NOME));
                     String idade = cursor.getString(cursor.getColumnIndex(db.COLUMN_IDADE));
                     String peso = cursor.getString(cursor.getColumnIndex(db.COLUMN_PESO));
@@ -172,6 +220,8 @@ public class ConfigActivity extends AppCompatActivity {
                             r = 0;
                             c++;
                         }
+                        Log.v("ValsXLS","Columns = "+ String.valueOf(c)+" Row = "+
+                                String.valueOf(r+(c*60000)));
                     //}
                 //} //while (cursor.moveToNext());
             }
@@ -184,6 +234,10 @@ public class ConfigActivity extends AppCompatActivity {
 
         } catch(Exception e){
             e.printStackTrace();
+        }finally {
+            if (pd.isShowing()){
+                pd.dismiss();
+            }
         }
     }
     private void loadViews() {
@@ -191,19 +245,6 @@ public class ConfigActivity extends AppCompatActivity {
         bt_telemetria = (Button) findViewById(R.id.bt_telemetria);
         bt_salvar = (Button) findViewById(R.id.bt_salvar);
         bt_abrir = (Button) findViewById(R.id.bt_abrir);
-    }
-
-    private void writeToFile(Context mcoContext,String file,String data) {
-        try {
-            FileOutputStream fOut = openFileOutput(file,Context.MODE_APPEND);
-            fOut.write(data.getBytes());
-            fOut.close();
-            Toast.makeText(getBaseContext(),"file saved",Toast.LENGTH_SHORT).show();
-        }
-        catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
     }
 
 
@@ -352,14 +393,11 @@ public class ConfigActivity extends AppCompatActivity {
             }
 
             //writeToFile(result,GraficoActivity.this);
-            //writeToFile(result,"NOMETESTE3");
-            MyDBHandler db = new MyDBHandler(getApplicationContext(),null,null,1);
-            db.addData(vals);
-            //creatXlsx(vals);
+            writeToFile(result,nomeArquivo);
+            //MyDBHandler db = new MyDBHandler(getApplicationContext(),null,null,1);
+            //db.addData(vals);
+            creatXlsx(vals,nomeArquivo);
             //setData(values);
-            if (pd.isShowing()){
-                pd.dismiss();
-            }
 
         }
     }

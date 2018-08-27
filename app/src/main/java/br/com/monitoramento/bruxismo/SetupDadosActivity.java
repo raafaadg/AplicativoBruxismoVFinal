@@ -24,12 +24,12 @@ public class SetupDadosActivity extends AppCompatActivity {
         // Carregue todas as views do seu layout
         loadViews();
         // Seta o que o botão vai fazer
-//        tv_iniciar_setup.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(SetupDadosActivity.this, SetupDadosActivity.class));
-//            }
-//        });
+        tv_dados_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SetupDadosActivity.this, TimeGrafico2Activity.class));
+            }
+        });
         new GetLeitura(SetupDadosActivity.this);
 
     }

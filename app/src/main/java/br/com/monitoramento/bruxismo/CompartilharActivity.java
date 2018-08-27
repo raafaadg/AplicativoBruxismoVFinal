@@ -52,8 +52,6 @@ public class CompartilharActivity extends AppCompatActivity {
     Context context;
     Uri selectedImagePath;
     boolean gmail = false, whats = false;
-    private static CompartilharActivity parent;
-
     private static final int REQUEST_CODE = 3132;
     private static final int MY_INTENT_CLICK = 23122;
 
@@ -123,7 +121,7 @@ public class CompartilharActivity extends AppCompatActivity {
         try {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
-            waIntent.setType("text/plain");
+            waIntent.setType("text/*");
             String text = "Estou compartilhando os dados obtidos";
 
             PackageInfo info = pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
@@ -171,7 +169,7 @@ public class CompartilharActivity extends AppCompatActivity {
                 Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
-        intent.setType("text/*");
+        //intent.setType("text/xls");
         intent.setAction(Intent.ACTION_GET_CONTENT);
 
         try {

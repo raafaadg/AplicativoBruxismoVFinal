@@ -427,7 +427,6 @@ public class GraficoActivity extends AppCompatActivity implements OnChartGesture
             set1 = new LineDataSet(values, "Dados Dispositivo");
 
             set1.setDrawIcons(false);
-
             // set the line to be drawn like this "- - - - - -"
             set1.enableDashedLine(10f, 5f, 0f);
             set1.enableDashedHighlightLine(10f, 5f, 0f);
@@ -435,6 +434,7 @@ public class GraficoActivity extends AppCompatActivity implements OnChartGesture
             set1.setCircleColor(Color.BLACK);
             set1.setLineWidth(1f);
             set1.setCircleRadius(3f);
+            set1.setDrawCircles(false);
             set1.setDrawCircleHole(false);
             set1.setValueTextSize(9f);
             set1.setDrawFilled(false);
