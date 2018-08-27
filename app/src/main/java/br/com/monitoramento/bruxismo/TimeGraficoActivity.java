@@ -1,68 +1,38 @@
 package br.com.monitoramento.bruxismo;
 
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.os.AsyncTask;
+
 import android.util.Log;
-import android.view.MenuItem;
 
-        import android.graphics.Color;
-        import android.os.Bundle;
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.view.WindowManager;
-import android.widget.ProgressBar;
-import android.widget.SeekBar;
-        import android.widget.SeekBar.OnSeekBarChangeListener;
-        import android.widget.TextView;
-        import android.widget.Toast;
 
-        import com.github.mikephil.charting.charts.LineChart;
-        import com.github.mikephil.charting.components.AxisBase;
-        import com.github.mikephil.charting.components.Legend;
-        import com.github.mikephil.charting.components.XAxis;
-        import com.github.mikephil.charting.components.YAxis;
-        import com.github.mikephil.charting.components.YAxis.AxisDependency;
-        import com.github.mikephil.charting.data.Entry;
-        import com.github.mikephil.charting.data.LineData;
-        import com.github.mikephil.charting.data.LineDataSet;
-        import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.WindowManager;
+
+
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.components.YAxis.AxisDependency;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.HttpURLConnection;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
 import java.net.SocketException;
-import java.net.SocketTimeoutException;
-import java.net.URL;
-import java.sql.Time;
-        import java.text.SimpleDateFormat;
-        import java.util.ArrayList;
-        import java.util.Date;
-        import java.util.List;
-        import java.util.concurrent.TimeUnit;
-
-        import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeitura;
-        import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeituraResponse;
 
 public class TimeGraficoActivity extends DemoBase implements
         OnChartValueSelectedListener {
 
     private LineChart mChart;
-    private long startTime;
-    private long stopTime ;
-    private long elapsedTime ;
     String messageStr="send";
-    private static final int UDP_SERVER_PORT = 4210;
+    private static final int UDP_SERVER_PORT = 4200;
     private static final int MAX_UDP_DATAGRAM_LEN = 10;
 
     @Override
@@ -131,22 +101,11 @@ public class TimeGraficoActivity extends DemoBase implements
 
         runThread();
 //        new JsonTask().execute("http://192.168.4.1/edit");
+        mChart.invalidate();
 
 
     }
 
-
-    public void setInfo(GetLeituraResponse info) {
-//        Context contexto = getApplicationContext();
-//        for(String s : info.valor)
-//            addEntry(Float.parseFloat(s));
-
-        //mChart.invalidate();
-//        stopTime = System.currentTimeMillis();
-//        elapsedTime = stopTime - startTime;
-//        //Toast.makeText(contexto, info.valor, Toast.LENGTH_SHORT).show();
-//        Log.e("Tempo Exeução", String.valueOf(elapsedTime));
-    }
 
     private void addEntry(float valor) {
 
@@ -163,7 +122,7 @@ public class TimeGraficoActivity extends DemoBase implements
             }
 
 //            data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 40) + 30f), 0);
-            data.addEntry(new Entry(set.getEntryCount(), valor/12), 0);
+            data.addEntry(new Entry(set.getEntryCount(), valor), 0);
             data.notifyDataChanged();
 
             // let the chart know it's data has changed
@@ -179,6 +138,8 @@ public class TimeGraficoActivity extends DemoBase implements
             // this automatically refreshes the chart (calls invalidate())
             // mChart.moveViewTo(data.getXValCount()-7, 55f,
             // AxisDependency.LEFT);
+            mChart.setData(data);
+
         }
     }
 
@@ -210,12 +171,11 @@ public class TimeGraficoActivity extends DemoBase implements
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                startTime = System.currentTimeMillis();
                                 getUDP();
                                 //new ClientSendAndListen().run();
                             }
                         });
-                        Thread.sleep(1000*1/5);
+                        Thread.sleep(1000/10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -235,48 +195,12 @@ public class TimeGraficoActivity extends DemoBase implements
             ds.receive(dp);
             Log.i("UDP packet received", new String(dp.getData()));
             addEntry(Float.parseFloat(new String(dp.getData())));
-
-            stopTime = System.currentTimeMillis();
-            elapsedTime = stopTime - startTime;
-            Log.e("Tempo Exeução", String.valueOf(elapsedTime));
         }catch (SocketException e){
             e.printStackTrace();
         }catch (IOException e){
             e.printStackTrace();
         }finally {
             ds.close();
-        }
-    }
-
-    public class ClientSendAndListen implements Runnable {
-        @Override
-        public void run() {
-            boolean run = true;
-            try {
-                DatagramSocket udpSocket = new DatagramSocket(UDP_SERVER_PORT);
-                InetAddress serverAddr = InetAddress.getByName("192.168.1.1");
-                byte[] buf = ("REQ").getBytes();
-                DatagramPacket packet = new DatagramPacket(buf, buf.length,serverAddr, UDP_SERVER_PORT);
-                udpSocket.send(packet);
-                    try {
-                        byte[] message = new byte[8000];
-                        DatagramPacket p = new DatagramPacket(message,message.length);
-                        Log.i("UDP client: ", "about to wait to receive");
-                        udpSocket.setSoTimeout(10000);
-                        udpSocket.receive(p);
-                        addEntry(Float.parseFloat(new String(p.getData())));
-                        String text = new String(message, 0, p.getLength());
-                        Log.d("Received text", text);
-                    } catch (IOException e) {
-                        Log.e(" UDP client IOException", "error: ", e);
-                        run = false;
-                        udpSocket.close();
-                    }
-            } catch (SocketException e) {
-                Log.e("Socket Open:", "Error:", e);
-            }catch (IOException e){
-                e.printStackTrace();
-            }
         }
     }
 
