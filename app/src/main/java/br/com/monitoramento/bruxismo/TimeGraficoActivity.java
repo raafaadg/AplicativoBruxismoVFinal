@@ -175,7 +175,7 @@ public class TimeGraficoActivity extends DemoBase implements
                                 //new ClientSendAndListen().run();
                             }
                         });
-                        Thread.sleep(1000/10);
+                        Thread.sleep(1000/4);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

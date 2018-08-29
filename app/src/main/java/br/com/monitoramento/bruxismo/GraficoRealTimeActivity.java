@@ -419,7 +419,7 @@ public class GraficoRealTimeActivity extends AppCompatActivity implements OnChar
                                 new JsonTask().execute("http://192.168.4.1/mestrado/json3");
                             }
                         });
-                        Thread.sleep(1000*1/2);
+                        Thread.sleep(1000*1/5);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

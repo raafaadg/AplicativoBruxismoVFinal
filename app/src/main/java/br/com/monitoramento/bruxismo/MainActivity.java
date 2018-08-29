@@ -185,7 +185,6 @@ public class MainActivity extends AppCompatActivity {
                         // error
                         Log.v("online",error.toString());
 
-
                     }
                 }
         ){
