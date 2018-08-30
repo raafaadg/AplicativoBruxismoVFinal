@@ -648,6 +648,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Bruxismo</string>
     <string name="category_phrases">Phrases</string>
+    <string name="objectbox_objectBrowserNotificationText">Running on port %1$d. Tap to open in the device\'s browser. Or run "adb forward tcp:%1$d tcp:%1$d" to forward the port to your host.</string>
+    <string name="objectbox_objectBrowserNotificationTitle">ObjectBox Browser</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="txtJson">TextJson</string>

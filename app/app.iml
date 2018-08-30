@@ -102,15 +102,18 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
+      <excludeFolder url="file://$MODULE_DIR$/build/objectbox-build-config.json" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: io.objectbox:objectbox-android-2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.github.PhilJay:MPAndroidChart:v3.0.3@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource-2.2.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:documentfile-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:print-28.0.0-rc02" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.flatbuffers:flatbuffers-java:1.9.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:28.0.0-rc02@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:interpolator-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:versionedparcelable-28.0.0-rc02" level="project" />
@@ -131,9 +134,11 @@
     <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish-0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:slidingpanelayout-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cursoradapter-28.0.0-rc02" level="project" />
+    <orderEntry type="library" name="Gradle: io.objectbox:objectbox-java:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.9.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:coordinatorlayout-28.0.0-rc02" level="project" />
@@ -143,11 +148,13 @@
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.4.0-RC1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\rafae\Desktop\AplicativoBruxismoVFinal\app\libs\jxl.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.objectbox:objectbox-java-api:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:drawerlayout-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\rafae\Desktop\AplicativoBruxismoVFinal\app\libs\svg-android.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.objectbox:objectbox-windows:2.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.greenrobot:essentials:3.0.0-RC1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-28.0.0-rc02" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater-28.0.0-rc02" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout-28.0.0-rc02" level="project" />
