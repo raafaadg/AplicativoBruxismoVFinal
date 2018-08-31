@@ -47,8 +47,7 @@
             android:id="@+id/teste"
             style="@style/CategoryStyle"
             android:background="#7520"
-            android:text="Teste"
-            android:visibility="invisible"/>
+            android:text="Teste"/>
 
     </LinearLayout>
 

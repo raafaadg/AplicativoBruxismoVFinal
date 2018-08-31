@@ -12,7 +12,7 @@ public final class R {
         public static final int objectbox_stop = 0x7f060065;
     }
     public static final class string {
-        public static final int objectbox_objectBrowserNotificationText = 0x7f0c002a;
-        public static final int objectbox_objectBrowserNotificationTitle = 0x7f0c002b;
+        public static final int objectbox_objectBrowserNotificationText = 0x7f0c002c;
+        public static final int objectbox_objectBrowserNotificationTitle = 0x7f0c002d;
     }
 }

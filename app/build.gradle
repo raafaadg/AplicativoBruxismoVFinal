@@ -10,18 +10,37 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
         }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+        packagingOptions {
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/DEPENDENCIES.txt'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/license.txt'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'META-INF/notice.txt'
+            exclude 'META-INF/INDEX.LIST'
+        }
+
     }
 }
 // In your app projects build.gradle file:
-apply plugin: 'com.android.application'
-apply plugin: 'io.objectbox'
-apply plugin: 'org.greenrobot.greendao' // apply plugin
+    apply plugin: 'com.android.application'
+    apply plugin: 'io.objectbox'
+    apply plugin: 'org.greenrobot.greendao' // apply plugin
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -30,7 +49,7 @@ dependencies {
     })
     // Bibliotecas
     //implementation 'com.github.User:Repo:Tag'
-    implementation 'org.greenrobot:greendao:3.2.2' // add library
+    //implementation 'org.greenrobot:greendao:3.2.2' // add library
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
     implementation 'com.squareup.retrofit2:retrofit:2.1.0'
@@ -39,8 +58,45 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     //compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     //runtimeOnly 'in.championswimmer:Android-SocialButtons:1.2'
-    testImplementation 'junit:junit:4.12'
+    //testImplementation 'junit:junit:4.12'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation files('libs/svg-android.jar')
     implementation files('libs/jxl.jar')
+
+    testImplementation (group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta2') {
+        exclude group: 'org.bytedeco.javacpp-presets', module: 'opencv-platform'
+        exclude group: 'org.bytedeco.javacpp-presets', module: 'leptonica-platform'
+        exclude group: 'org.bytedeco.javacpp-presets', module: 'hdf5-platform'
+    }
+    testImplementation group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta2'
+    testImplementation group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta2', classifier: "android-arm"
+    testImplementation group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta2', classifier: "android-arm64"
+    testImplementation group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta2', classifier: "android-x86"
+    testImplementation group: 'org.nd4j', name: 'nd4j-native', version: '1.0.0-beta2', classifier: "android-x86_64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'openblas', version: '0.3.0-1.4.2'
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'openblas', version: '0.3.0-1.4.2', classifier: "android-arm"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'openblas', version: '0.3.0-1.4.2', classifier: "android-arm64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'openblas', version: '0.3.0-1.4.2', classifier: "android-x86"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'openblas', version: '0.3.0-1.4.2', classifier: "android-x86_64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.4.2-1.4.2'
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.4.2-1.4.2', classifier: "android-arm"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.4.2-1.4.2', classifier: "android-arm64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.4.2-1.4.2', classifier: "android-x86"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.4.2-1.4.2', classifier: "android-x86_64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: '1.76.0-1.4.2'
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: '1.76.0-1.4.2', classifier: "android-arm"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: '1.76.0-1.4.2', classifier: "android-arm64"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: '1.76.0-1.4.2', classifier: "android-x86"
+    testImplementation group: 'org.bytedeco.javacpp-presets', name: 'leptonica', version: '1.76.0-1.4.2', classifier: "android-x86_64"
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+    annotationProcessor 'org.projectlombok:lombok:1.16.16'
+
+    implementation 'com.google.code.findbugs:annotations:3.0.1', {
+        exclude module: 'jsr305'
+        exclude module: 'jcip-annotations'
+    }
+
+
 }
+

@@ -133,6 +133,7 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
             int i = 0;
 
             ArrayList<Entry> values = new ArrayList<Entry>();
+            ArrayList<String> vals = new ArrayList<String>();
             //x16-Aug-2018 22:00:00
             char[] contr = myData.toCharArray();
             if (contr[0] == 'x' || contr[0] == 'y'){
@@ -162,6 +163,7 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
                             values.add(new Entry(now,
                                     Integer.parseInt(ybuffer)
                             ));
+                            vals.add(buffer);
                             i++;
                             xbuffer = "";
                             ybuffer = "";
@@ -175,15 +177,16 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
                         buffer += ress;
                     else{
                         values.add(new Entry(i, Float.parseFloat(buffer)));
+                        vals.add(buffer);
                         i++;
                         buffer = "";
                     }
                 }
 
             }
-
-            //writeToFile(result,GraficoActivity.this);
             in.close();
+            MyDBHandler db = new MyDBHandler(getApplicationContext(),null,null,1);
+            db.addData(convertArrayToString(vals));
             setData(values);
         } catch (IOException e) {
             e.printStackTrace();
@@ -227,6 +230,14 @@ public class Grafico2Activity extends AppCompatActivity implements OnChartGestur
         // modify the legend ...
         l.setForm(Legend.LegendForm.LINE);
 
+    }
+
+    public static String convertArrayToString(ArrayList<String> array){
+        StringBuilder str = new StringBuilder();
+        for (String i :array) {
+            str.append(i).append(',');
+        }
+        return str.toString();
     }
 
         @Override

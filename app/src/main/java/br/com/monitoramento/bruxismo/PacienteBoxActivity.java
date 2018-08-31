@@ -7,13 +7,24 @@ import io.objectbox.annotation.Id;
 public class PacienteBoxActivity {
 
     @Id
-    private long id;
+    long id;
 
     private String nome;
-    private int idade;
-    private int peso;
+    private String idade;
+    private String peso;
     private String genero;
     private String email;
+
+    public PacienteBoxActivity(long id, String nome, String idade, String peso, String genero,
+                               String email){
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.peso = peso;
+        this.genero = genero;
+        this.email = email;
+    }
+    public PacienteBoxActivity(){}
 
     // properties
     public void setID(int id) {
@@ -22,38 +33,39 @@ public class PacienteBoxActivity {
     public long getID() {
         return this.id;
     }
-    public void setPacienteNome(String pacienteNome) {
+
+    public void setNome(String pacienteNome) {
         this.nome = pacienteNome;
     }
-    public String getPacienteNome() {
+    public String getNome() {
         return this.nome;
     }
 
-    public void setPacienteIdade(int pacienteIdade) {
+    public void setIdade(String pacienteIdade) {
         this.idade = pacienteIdade;
     }
-    public int getPacienteIdade() {
+    public String getIdade() {
         return this.idade;
     }
 
-    public void setPacientePeso(int pacientePeso) {
+    public void setPeso(String pacientePeso) {
         this.peso = pacientePeso;
     }
-    public int getPacientePeso() {
+    public String getPeso() {
         return this.peso;
     }
 
-    public void setPacienteGenero(String pacienteGenero) {
+    public void setGenero(String pacienteGenero) {
         this.genero = pacienteGenero;
     }
-    public String getPacienteGenero() {
+    public String getGenero() {
         return this.genero;
     }
 
-    public void setPacienteemail(String pacienteEmail) {
+    public void setEmail(String pacienteEmail) {
         this.email = pacienteEmail;
     }
-    public String getPacienteEmail() {
+    public String getEmail() {
         return this.email;
     }
 }

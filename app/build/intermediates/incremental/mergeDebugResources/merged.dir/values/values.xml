@@ -574,6 +574,8 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="text_size_small">20sp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -607,6 +609,7 @@
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="ButtonHit">btnHit</string>
+    <string name="OO">00</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -648,11 +651,19 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Bruxismo</string>
     <string name="category_phrases">Phrases</string>
+    <string name="classify_iris">CLASSIFY IRIS</string>
     <string name="objectbox_objectBrowserNotificationText">Running on port %1$d. Tap to open in the device\'s browser. Or run "adb forward tcp:%1$d tcp:%1$d" to forward the port to your host.</string>
     <string name="objectbox_objectBrowserNotificationTitle">ObjectBox Browser</string>
+    <string name="petal_length">Petal Length</string>
+    <string name="petal_width">Petal Width</string>
     <string name="search_menu_title">Search</string>
+    <string name="sepal_length">Sepal Length</string>
+    <string name="sepal_width">Sepal Width</string>
+    <string name="setosa">I. setosa</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="txtJson">TextJson</string>
+    <string name="versicolor">I. versicolor</string>
+    <string name="virginica">I. virginica</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

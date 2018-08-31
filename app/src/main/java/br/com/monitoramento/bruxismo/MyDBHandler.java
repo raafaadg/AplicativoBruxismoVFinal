@@ -88,7 +88,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
                     0,
                     0,
                     "Genero",
-                    "email"
+                    "email",
+                    "dados"
             ));
     }
 
@@ -122,7 +123,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
             results.add(result_5);
 
             String result_6 = cursor.getString(6);
-            //results.add(result_5);
+            results.add(result_6);
 
             result += String.valueOf(result_0) + " " +
                     result_1 + " " +
@@ -147,21 +148,17 @@ public class MyDBHandler extends SQLiteOpenHelper {
         values.put(COLUMN_PESO, paciente.getPacientePeso());
         values.put(COLUMN_GENERO, paciente.getPacienteGenero());
         values.put(COLUMN_EMAIL, paciente.getPacienteEmail());
+        values.put(COLUMN_DADOS, paciente.getPacienteDados());
         SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
 
-    public void addData(ArrayList<String> paciente) {
+    public void addData(String pacienteDados) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        int count = 0;
-        for(String pacienteDados: paciente) {
-            values.put(COLUMN_DADOS, pacienteDados);
-            db.insert(TABLE_NAME, null, values);
-            count++;
-        }
-        db.close();
+        values.put(COLUMN_DADOS, pacienteDados);
+        db.update(TABLE_NAME, values, COLUMN_ID + "=" + 1, null);
     }
 
     public Paciente findHandler(String pacientenome) {
@@ -177,6 +174,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
             student.setPacientePeso(Integer.parseInt(cursor.getString(3)));
             student.setPacienteGenero(cursor.getString(4));
             student.setPacienteemail(cursor.getString(5));
+            student.setPacienteDados(cursor.getString(6));
             cursor.close();
         } else {
             student = null;
@@ -227,6 +225,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
         values.put(COLUMN_PESO, paciente.getPacientePeso());
         values.put(COLUMN_GENERO, paciente.getPacienteGenero());
         values.put(COLUMN_EMAIL, paciente.getPacienteEmail());
+        values.put(COLUMN_DADOS, paciente.getPacienteDados());
         return db.update(TABLE_NAME, values, COLUMN_ID + "=" + 1, null) > 0;
     }
 }

@@ -9,17 +9,19 @@ public class Paciente {
     private int pacientePeso;
     private String pacienteGenero;
     private String pacienteEmail;
+    private String pacienteDados;
 
     // constructors
     public Paciente() {}
     public Paciente(int pacienteID, String pacienteNome, int pacienteIdade, int pacientePeso,
-                    String pacienteGenero, String pacienteEmail) {
+                    String pacienteGenero, String pacienteEmail, String pacienteDados) {
         this.pacienteID = pacienteID;
         this.pacienteNome = pacienteNome;
         this.pacienteIdade = pacienteIdade;
         this.pacientePeso = pacientePeso;
         this.pacienteGenero = pacienteGenero;
         this.pacienteEmail = pacienteEmail;
+        this.pacienteDados = pacienteDados;
     }
     // properties
     public void setID(int id) {
@@ -28,6 +30,7 @@ public class Paciente {
     public int getID() {
         return this.pacienteID;
     }
+
     public void setPacienteNome(String pacienteNome) {
         this.pacienteNome = pacienteNome;
     }
@@ -61,5 +64,12 @@ public class Paciente {
     }
     public String getPacienteEmail() {
         return this.pacienteEmail;
+    }
+
+    public void setPacienteDados(String pacienteDados) {
+        this.pacienteDados = pacienteDados;
+    }
+    public String getPacienteDados() {
+        return this.pacienteDados;
     }
 }
