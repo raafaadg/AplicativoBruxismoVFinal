@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.bytedeco.javacpp-presets:leptonica:1.76.0-1.4.2:android-x86_64@jar">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.76.0-1.4.2/4cf0fb2aff65a133c62dd01889b51f682f0511ff/leptonica-1.76.0-1.4.2-android-x86_64.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

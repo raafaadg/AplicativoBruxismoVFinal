@@ -86,7 +86,7 @@ public class CompartilharActivity extends AppCompatActivity {
                 results = "";
                 for(String aux:result) {
                     results += aux;
-                    results += ",";
+                    results += ";";
                 }
                 //new SendRequest().execute();
                 //new SendRequest().doInBackground();
@@ -202,7 +202,7 @@ public class CompartilharActivity extends AppCompatActivity {
                 ArrayList<String> result = new ArrayList<String>();
                 String buffer = "";
                 for(char res : results.toCharArray()){
-                    if(res != ',')
+                    if(res != ';')
                         buffer += res;
                     else{
                         result.add(buffer);
@@ -215,6 +215,7 @@ public class CompartilharActivity extends AppCompatActivity {
                 postDataParams.put("peso", result.get(2));
                 postDataParams.put("genero", result.get(3));
                 postDataParams.put("email", result.get(4));
+                postDataParams.put("data", result.get(5));
                 postDataParams.put("sheet", "Sheet1");
 
                 Log.e("params",postDataParams.toString());
