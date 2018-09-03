@@ -3,9 +3,21 @@ package br.com.monitoramento.bruxismo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeitura;
 import br.com.monitoramento.bruxismo.client.GetLeitura.GetLeituraResponse;
@@ -27,11 +39,45 @@ public class SetupDadosActivity extends AppCompatActivity {
         tv_dados_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SetupDadosActivity.this, TimeGrafico2Activity.class));
+                tryHTTP("http://192.168.4.1/mestrado/online");
             }
         });
         new GetLeitura(SetupDadosActivity.this);
 
+    }
+
+    public void tryHTTP(String url){
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        StringRequest putRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        // response
+                        if(response.equals("Online Desabilitado")){
+                            Log.v("online","Modo online desativado");
+                        }else {
+                            Toast.makeText(SetupDadosActivity.this, response, Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(SetupDadosActivity.this,
+                                    TimeGrafico2Activity.class));
+
+                            Log.v("online", "Modo online Ativado");
+                        }
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        Log.v("online",error.toString());
+
+                    }
+                }
+        );
+
+        queue.add(putRequest);
     }
 
     private void loadViews() {
