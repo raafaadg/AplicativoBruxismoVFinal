@@ -1,14 +1,26 @@
 package br.com.monitoramento.bruxismo;
 
 
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.util.Log;
 
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
@@ -22,10 +34,27 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.SocketException;
+import java.net.URL;
+import java.util.ArrayList;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
+import static android.os.Process.THREAD_PRIORITY_MORE_FAVORABLE;
 
 public class TimeGraficoActivity extends DemoBase implements
         OnChartValueSelectedListener {
@@ -34,6 +63,11 @@ public class TimeGraficoActivity extends DemoBase implements
     String messageStr="send";
     private static final int UDP_SERVER_PORT = 4200;
     private static final int MAX_UDP_DATAGRAM_LEN = 10;
+    public boolean controlThread = true;
+    ProgressDialog pd;
+    public TextView tv_ongra;
+    public String urll = "http://192.168.4.1/mestrado/offline";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +76,21 @@ public class TimeGraficoActivity extends DemoBase implements
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_linechart_time);
 
-
+        tv_ongra = findViewById(R.id.tv_ongra);
+        tv_ongra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pd = new ProgressDialog(TimeGraficoActivity.this);
+                pd.setMessage("Aguarde reconexão com o dispositivo.");
+                pd.setCancelable(false);
+                pd.show();
+                controlThread = false;
+                Thread.interrupted();
+                Log.v("run","ESSA PORRA TEM QUE PARAR AGORAAAA!!!");
+                Log.v("run",String.valueOf(controlThread));
+                tryHTTP("http://192.168.4.1/mestrado/offline");
+            }
+        });
         mChart = findViewById(R.id.chart1);
 
         // no description text
@@ -98,7 +146,7 @@ public class TimeGraficoActivity extends DemoBase implements
         YAxis rightAxis = mChart.getAxisRight();
         rightAxis.setEnabled(false);
 
-
+        controlThread = true;
         runThread();
 //        new JsonTask().execute("http://192.168.4.1/edit");
         mChart.invalidate();
@@ -159,6 +207,115 @@ public class TimeGraficoActivity extends DemoBase implements
         set.setDrawValues(false);
         return set;
     }
+    //@Override
+    //public void onDestroy() {
+    //    controlThread = false;
+    //    Thread.interrupted();
+    //    //tryHTTP("http://192.168.4.1/mestrado/offline");
+    //    Log.v("run","ESSA PORRA TEM QUE PARAR AGORAAAA!!!");
+    //    Log.v("run",String.valueOf(controlThread));
+    //    //new SendRequest().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    //    super.onDestroy();
+    //}
+
+    private class SendRequest extends AsyncTask<String, String, String> {
+
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+        }
+
+        protected String doInBackground(String... params) {
+
+
+            HttpURLConnection connection = null;
+            BufferedReader reader = null;
+
+            try {
+                URL url = new URL(urll);
+                connection = (HttpURLConnection) url.openConnection();
+                connection.connect();
+
+
+                InputStream stream = connection.getInputStream();
+
+                reader = new BufferedReader(new InputStreamReader(stream));
+
+                StringBuffer buffer = new StringBuffer();
+                String line = "";
+
+                while ((line = reader.readLine()) != null) {
+                    buffer.append(line);
+                }
+                return buffer.toString();
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (connection != null) {
+                    connection.disconnect();
+                }
+                try {
+                    if (reader != null) {
+                        reader.close();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            Log.v("run","Fechou e foi pra main");
+            Toast.makeText(TimeGraficoActivity.this, result, Toast.LENGTH_LONG).show();
+
+        }
+    }
+
+
+    public void tryHTTP(String url){
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        StringRequest putRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        // response
+                        Log.v("online","Modo online desativado");
+                        if (pd.isShowing()) {
+                            pd.dismiss();
+                        }
+                        Toast.makeText(TimeGraficoActivity.this, response, Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(TimeGraficoActivity.this, MainActivity.class));
+                        finish();
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        Log.v("online",error.toString());
+
+                    }
+                }
+        );
+        queue.add(putRequest);
+    }
+
+
+    @Override
+    protected void onRestart() {
+        Log.v("run","PODE VOLTAR A FUNFAR AGORAAAA!!!");
+        super.onRestart();
+    }
 
     private Thread thread;
 
@@ -166,12 +323,21 @@ public class TimeGraficoActivity extends DemoBase implements
 
         new Thread() {
             public void run() {
-                while (true) {
+                if (interrupted()){
+                    //new SendRequest().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                    return;
+                }
+                while (controlThread) {
                     try {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 getUDP();
+                                Log.v("run","RODANDO!!!");
+                                if (interrupted()){
+                                    //new SendRequest().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                                    return;
+                                }
                                 //new ClientSendAndListen().run();
                             }
                         });

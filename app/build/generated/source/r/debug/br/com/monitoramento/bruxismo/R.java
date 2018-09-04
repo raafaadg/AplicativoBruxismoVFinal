@@ -1718,7 +1718,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3218,16 +3218,17 @@ public final class R {
     public static final int tv_dados_ok=0x7f0700e3;
     public static final int tv_emg=0x7f0700e4;
     public static final int tv_iniciar_setup=0x7f0700e5;
-    public static final int tv_setup_start=0x7f0700e6;
-    public static final int uniform=0x7f0700e7;
-    public static final int up=0x7f0700e8;
-    public static final int useLogo=0x7f0700e9;
-    public static final int viewGithub=0x7f0700ea;
-    public static final int viewRealm=0x7f0700eb;
-    public static final int website=0x7f0700ec;
-    public static final int withText=0x7f0700ed;
-    public static final int wrap=0x7f0700ee;
-    public static final int wrap_content=0x7f0700ef;
+    public static final int tv_ongra=0x7f0700e6;
+    public static final int tv_setup_start=0x7f0700e7;
+    public static final int uniform=0x7f0700e8;
+    public static final int up=0x7f0700e9;
+    public static final int useLogo=0x7f0700ea;
+    public static final int viewGithub=0x7f0700eb;
+    public static final int viewRealm=0x7f0700ec;
+    public static final int website=0x7f0700ed;
+    public static final int withText=0x7f0700ee;
+    public static final int wrap=0x7f0700ef;
+    public static final int wrap_content=0x7f0700f0;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -8078,7 +8079,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>

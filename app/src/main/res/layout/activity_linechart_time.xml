@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/chart1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_ongra"
+        android:background="#2b56ca"
+        android:text="RETORNAR MENU PRINCIPAL"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_weight="0.9"/>
 
     <!--<SeekBar-->
         <!--android:id="@+id/seekBar1"-->
@@ -31,4 +43,4 @@
         <!--android:layout_alignParentBottom="true"-->
         <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
 
-</RelativeLayout>
+</LinearLayout>

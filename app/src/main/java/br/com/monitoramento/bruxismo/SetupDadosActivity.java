@@ -86,7 +86,7 @@ public class SetupDadosActivity extends AppCompatActivity {
         et_tele_nomearquivo = (EditText) findViewById(R.id.et_tele_nomearquivo);
         et_tele_tamarquivo = (EditText) findViewById(R.id.et_tele_tamarquivo);
         tv_dados_ok = (TextView) findViewById(R.id.tv_dados_ok);
-        tv_dados_ok.setVisibility(View.INVISIBLE);
+        tv_dados_ok.setVisibility(View.VISIBLE);
     }
 
     public void setInfo(GetLeituraResponse info) {

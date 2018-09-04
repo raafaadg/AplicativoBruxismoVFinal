@@ -1,12 +1,16 @@
 package br.com.monitoramento.bruxismo;
 
 
+import android.app.ProgressDialog;
+import android.os.CountDownTimer;
 import android.util.Log;
 
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -23,14 +27,21 @@ import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
+import java.util.ArrayList;
 
 public class TimeGrafico2Activity extends DemoBase implements
         OnChartValueSelectedListener {
 
     private LineChart mChart;
+    private boolean calibrar = false;
+    public boolean controlThread2 = true;
+    private int ref = 0;
+    private int count = 0;
+    private int media = 0;
     String messageStr="send";
     private static final int UDP_SERVER_PORT = 4200;
     private static final int MAX_UDP_DATAGRAM_LEN = 10;
@@ -98,12 +109,52 @@ public class TimeGrafico2Activity extends DemoBase implements
         YAxis rightAxis = mChart.getAxisRight();
         rightAxis.setEnabled(false);
 
-
+        controlThread2 = true;
         runThread();
 //        new JsonTask().execute("http://192.168.4.1/edit");
         mChart.invalidate();
 
+        final ProgressDialog progressDialog = new ProgressDialog(TimeGrafico2Activity.this);
+        progressDialog.setProgressStyle(progressDialog.STYLE_HORIZONTAL);
+        progressDialog.setTitle("Calibrando valor de Referência");
+        progressDialog.setMessage("Favor esperar calibração. NÃO REALIZAR nenhuma mordida!!");
+        progressDialog.setIcon(R.mipmap.ic_launcher);
+        progressDialog.setMax(100);
+        progressDialog.setProgress(0);
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int progress = 0;
+                calibrar = true;
+                while (progress<= 100){
 
+                    try {
+                        progressDialog.setProgress(progress);
+                        progress++;
+                        Thread.sleep(100);
+
+
+                    }catch (Exception ex){
+                        ex.getMessage();
+                    }
+
+                }
+                progressDialog.dismiss();
+                media = ref/count;
+                Log.v("media",String.valueOf(media));
+                TimeGrafico2Activity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(
+                                TimeGrafico2Activity.this,
+                                "Calibração Concluida ",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        t.start();
+        progressDialog.show();
     }
 
 
@@ -166,12 +217,16 @@ public class TimeGrafico2Activity extends DemoBase implements
 
         new Thread() {
             public void run() {
-                while (true) {
+                while (controlThread2) {
                     try {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 getUDP();
+                                if(calibrar){
+                                    ref+=ref;
+                                    count++;
+                                }
                                 //new ClientSendAndListen().run();
                             }
                         });
