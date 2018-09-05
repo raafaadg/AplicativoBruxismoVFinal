@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -88,6 +89,7 @@ public class TimeGraficoActivity extends DemoBase implements
                 Thread.interrupted();
                 Log.v("run","ESSA PORRA TEM QUE PARAR AGORAAAA!!!");
                 Log.v("run",String.valueOf(controlThread));
+                //new SendRequest().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 tryHTTP("http://192.168.4.1/mestrado/offline");
             }
         });
@@ -150,7 +152,6 @@ public class TimeGraficoActivity extends DemoBase implements
         runThread();
 //        new JsonTask().execute("http://192.168.4.1/edit");
         mChart.invalidate();
-
 
     }
 
@@ -272,8 +273,14 @@ public class TimeGraficoActivity extends DemoBase implements
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            Log.v("run","Fechou e foi pra main");
+            if (pd.isShowing()) {
+                pd.dismiss();
+            }
             Toast.makeText(TimeGraficoActivity.this, result, Toast.LENGTH_LONG).show();
+            startActivity(new Intent(TimeGraficoActivity.this, MainActivity.class));
+            finish();
+            Log.v("run","Fechou e foi pra main");
+            //Toast.makeText(TimeGraficoActivity.this, result, Toast.LENGTH_LONG).show();
 
         }
     }
@@ -307,6 +314,10 @@ public class TimeGraficoActivity extends DemoBase implements
                     }
                 }
         );
+        putRequest.setRetryPolicy(new DefaultRetryPolicy(
+                40000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(putRequest);
     }
 

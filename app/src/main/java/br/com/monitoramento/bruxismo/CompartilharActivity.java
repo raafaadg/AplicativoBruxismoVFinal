@@ -129,7 +129,7 @@ public class CompartilharActivity extends AppCompatActivity {
             //in catch block will be called
             waIntent.setPackage("com.whatsapp");
 
-            waIntent.putExtra(Intent.EXTRA_TEXT, text);
+            //waIntent.putExtra(Intent.EXTRA_TEXT, text);
             waIntent.putExtra(Intent.EXTRA_STREAM,selectedImagePath);
             startActivity(Intent.createChooser(waIntent, "Share with"));
 
