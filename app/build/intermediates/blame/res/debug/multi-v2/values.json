@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rafae\\.gradle\\caches\\transforms-1\\files-1.1\\coordinatorlayout-28.0.0-rc02.aar\\fe0f0085feecbb956f0ffb9aac194598\\res\\values\\values.xml",
@@ -23,24 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "4,14,1,3,6,7,8,9,10,11,5,12,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "120,637,17,66,212,269,324,377,432,485,166,531,585",
-                        "endColumns": "44,33,45,52,55,53,51,53,51,44,44,52,50",
-                        "endOffsets": "160,666,58,114,263,318,371,426,479,525,206,579,631"
-                    },
-                    "to": {
-                        "startLines": "610,611,651,652,653,656,657,659,660,661,663,664,665",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "53453,53498,56290,56336,56389,56733,56787,56892,56946,56998,57114,57159,57212",
-                        "endColumns": "44,33,45,52,55,53,51,53,51,44,44,52,50",
-                        "endOffsets": "53493,53527,56331,56384,56440,56782,56834,56941,56993,57038,57154,57207,57258"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\dimen.xml",
+                    "source": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\dimen.xml",
                     "from": {
                         "startLines": "3,4",
                         "startColumns": "4,4",
@@ -54,6 +37,23 @@
                         "startOffsets": "51690,51737",
                         "endColumns": "46,46",
                         "endOffsets": "51732,51779"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,5,6,4,2,3",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "290,204,245,157,57,105",
+                        "endColumns": "50,39,43,45,46,50",
+                        "endOffsets": "336,239,284,198,99,151"
+                    },
+                    "to": {
+                        "startLines": "144,145,154,155,156,157",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "7028,7079,7760,7804,7850,7897",
+                        "endColumns": "50,39,43,45,46,50",
+                        "endOffsets": "7074,7114,7799,7845,7892,7943"
                     }
                 },
                 {
@@ -93,7 +93,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,15,9",
                         "startColumns": "4,4,4",
@@ -112,20 +112,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rafae\\Desktop\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "7,5,6,4,2,3",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "290,204,245,157,57,105",
-                        "endColumns": "50,39,43,45,46,50",
-                        "endOffsets": "336,239,284,198,99,151"
+                        "startLines": "4,14,1,3,6,7,8,9,10,11,5,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "120,637,17,66,212,269,324,377,432,485,166,531,585",
+                        "endColumns": "44,33,45,52,55,53,51,53,51,44,44,52,50",
+                        "endOffsets": "160,666,58,114,263,318,371,426,479,525,206,579,631"
                     },
                     "to": {
-                        "startLines": "144,145,154,155,156,157",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "7028,7079,7760,7804,7850,7897",
-                        "endColumns": "50,39,43,45,46,50",
-                        "endOffsets": "7074,7114,7799,7845,7892,7943"
+                        "startLines": "610,611,651,652,653,656,657,659,660,661,663,664,665",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "53453,53498,56290,56336,56389,56733,56787,56892,56946,56998,57114,57159,57212",
+                        "endColumns": "44,33,45,52,55,53,51,53,51,44,44,52,50",
+                        "endOffsets": "53493,53527,56331,56384,56440,56782,56834,56941,56993,57038,57154,57207,57258"
                     }
                 },
                 {
