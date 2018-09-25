@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import io.objectbox.Box;
-import io.objectbox.query.Query;
+//import io.objectbox.Box;
+//import io.objectbox.query.Query;
 
 /**
  * Created by rafae on 13/06/2017.
@@ -32,8 +32,8 @@ public class CadastroActivity extends AppCompatActivity{
     public TextView lst;
     public ArrayList<String> dados = new ArrayList <String>();
 
-    private Box<PacienteBoxActivity> notesBox;
-    private Query<PacienteBoxActivity> notesQuery;
+    //private Box<PacienteBoxActivity> notesBox;
+    //private Query<PacienteBoxActivity> notesQuery;
 
 
     @Override
