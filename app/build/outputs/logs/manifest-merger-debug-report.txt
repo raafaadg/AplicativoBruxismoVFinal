@@ -1,293 +1,293 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-MERGED from [io.objectbox:objectbox-android:2.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\objectbox-android-2.1.0.aar\4cad3a86360b3c95103862008dae7ad5\AndroidManifest.xml:2:1-10:12
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\8a81db6bf14772f3f52aa29d84ebd7ae\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc02.aar\44e0ad4989a25664acf524e5b6922a94\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\9ace8d35bcd6f448fac5962ad10f4f0d\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc02.aar\4f664f925f3f5a322a2484d4d4d7e958\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc02.aar\2f4396076035c47f05dffb2b5670d22e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc02.aar\d05433d87b97b7f4d697ecaaed1d82a7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc02.aar\966662b9d9fae8c296e5f0351125473b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc02.aar\2c84b54ed6ed949530506a800fc11657\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc02.aar\a167168df4383f3f26bf095586a11286\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc02.aar\f5752e112d794c101689056de289509b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc02.aar\c1c9630b8b2c30a810ce0f3d76ecdf63\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc02.aar\06f3fd9edf06cb5dae7d8f6f035b5955\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc02.aar\d7871dfd38eb5d5fcf58e1a479039e26\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc02.aar\a43f1901b4e76988ea48fa74e025a3a7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc02.aar\9bb7106a52291ccce9b8c1d6f01dd990\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc02.aar\72875fcb2abc970f495e45260bf603d4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc02.aar\614453afe83d0311ce587d35183694ff\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc02.aar\6674ea8e1ed5e574396d2221ee433996\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a56423a28aee4efc2b8cc5edda1d4c1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc02.aar\1bbc08efdaf29ef0194f391454221bd1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc02.aar\2a0ba1c2e021fea09e9211f7637bdf5d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc02.aar\0f8c981ac14708112362fcc4f8f3af5a\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\51007fcf19f6476f2442118d6da048ca\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcb84f42dcab14e0fec54b3d30bed534\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fde3819281f172841828fdbab0093a7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc02.aar\1ffbcb2424ec1694be8482f635a1a054\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+MERGED from [io.objectbox:objectbox-android:2.1.0] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/objectbox-android-2.1.0.aar/76e051ade2e36d8665a4d03f503a0bd8/AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.volley:volley:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/26d30b3f47201e5424d995a8495e0fbb/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/97ee0aa2bd7a377f36f4c981346c18f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/9963ff5ab76c19e3a49924b890991d88/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/4ecd5e54324349cc83fa344d7ad3e3c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/7f6cc6a9793ef512e4446ce4b318424d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c8bff0e73073d51aa41b7b912b3afb22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/fef1baadddf182f65a4afd131ec9bfff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/7413b5ef0f7e925ca3dec9a5285a4f10/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/f2cca6ea65bb94839f3e11d02bb9dc8e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/f95e788dbb7c103a9f5227aa7f92f4a1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/382079efcbe5c9a130e66d52f325ba2f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/8568b197649a278966d79027ea6a9cd0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/4e96ebe864256f56d55211bb5eddf556/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/d5585d974399ce533f1b689b76430ba7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/21b12ce2ef2ab533946393c2b90781e9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/804869c588dc6cd795f12f868d092264/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5b0346a9e3193ba6ee751d67950b460b/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/c6e9640b43ce73eff0930a629915fb23/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/abafa8dd77a50c9a69ae5928cb5c3eec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/b50f15c85f995035a4c96ae74db2eab7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/ac17fc2ce6984a3582e44485c77372fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/82caac02e51bb340d23a5f07b708ab32/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4378aea70b516a079f7bae023e3a4872/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/53a7b0bbc3e69b9e344961e055061dfc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/29c5231edeca9f912893c891ab7b7814/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/0e974aed69bb511435ce7f941fb4ec74/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
 	package
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:3:5-44
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:1-136:12
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:1-136:12
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:7:5-76
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:7:22-73
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:9:22-77
 application
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:11:5-135:19
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\8a81db6bf14772f3f52aa29d84ebd7ae\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\8a81db6bf14772f3f52aa29d84ebd7ae\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\9ace8d35bcd6f448fac5962ad10f4f0d\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\9ace8d35bcd6f448fac5962ad10f4f0d\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc02.aar\614453afe83d0311ce587d35183694ff\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc02.aar\614453afe83d0311ce587d35183694ff\AndroidManifest.xml:22:5-23:19
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:11:5-135:19
+MERGED from [com.android.volley:volley:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/26d30b3f47201e5424d995a8495e0fbb/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/26d30b3f47201e5424d995a8495e0fbb/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/9963ff5ab76c19e3a49924b890991d88/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/9963ff5ab76c19e3a49924b890991d88/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5b0346a9e3193ba6ee751d67950b460b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5b0346a9e3193ba6ee751d67950b460b/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:17:9-40
 activity#br.com.monitoramento.bruxismo.MainActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:22:27-74
 activity#br.com.monitoramento.bruxismo.CadastroActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:26:9-33:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:26:9-33:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:29:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:29:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:27:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:30:13-32:48
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:30:13-32:48
 	android:value
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:32:17-46
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:32:17-46
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:31:17-63
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:31:17-63
 activity#br.com.monitoramento.bruxismo.GraficoActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:35:9-42:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:35:9-42:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:38:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:38:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:37:13-36
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:36:13-44
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:36:13-44
 activity#br.com.monitoramento.bruxismo.Grafico2Activity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:44:9-51:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:44:9-51:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:47:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:47:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:46:13-42
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:46:13-42
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:45:13-45
 activity#br.com.monitoramento.bruxismo.TimeGraficoActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:53:9-60:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:53:9-60:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:56:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:56:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:55:13-41
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:55:13-41
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:54:13-48
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:54:13-48
 activity#br.com.monitoramento.bruxismo.GraficoRealTimeActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:62:9-69:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:62:9-69:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:65:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:65:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:64:13-42
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:64:13-42
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:63:13-52
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:63:13-52
 activity#br.com.monitoramento.bruxismo.CompartilharActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:71:9-78:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:71:9-78:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:74:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:74:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:73:13-41
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:73:13-41
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:72:13-49
 activity#br.com.monitoramento.bruxismo.ConfigActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:80:9-87:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:80:9-87:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:83:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:83:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:82:13-42
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:82:13-42
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:81:13-43
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:81:13-43
 activity#br.com.monitoramento.bruxismo.SetupDadosActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:88:9-95:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:88:9-95:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:91:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:91:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:90:13-40
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:90:13-40
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:89:13-47
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:89:13-47
 activity#br.com.monitoramento.bruxismo.SetupStartActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:96:9-103:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:96:9-103:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:99:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:99:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:98:13-40
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:98:13-40
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:97:13-47
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:97:13-47
 activity#br.com.monitoramento.bruxismo.SetupOkActivity
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:105:9-112:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:105:9-112:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:108:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:108:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:107:13-40
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:107:13-40
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:106:13-44
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:106:13-44
 activity#br.com.monitoramento.bruxismo.MainActivity2
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:114:9-121:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:114:9-121:20
 	android:parentActivityName
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:117:13-55
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:117:13-55
 	android:label
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:116:13-34
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:116:13-34
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:115:13-42
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:115:13-42
 provider#android.support.v4.content.FileProvider
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:123:9-133:20
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:123:9-133:20
 	android:readPermission
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:128:13-80
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:128:13-80
 	android:grantUriPermissions
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:127:13-47
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:127:13-47
 	android:authorities
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:125:13-77
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:125:13-77
 	android:exported
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:126:13-37
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:126:13-37
 	android:writePermission
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:129:13-82
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:129:13-82
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:124:13-67
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:124:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:130:13-132:54
+ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:130:13-132:54
 	android:resource
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:132:17-51
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:132:17-51
 	android:name
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml:131:17-67
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml:131:17-67
 uses-sdk
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-MERGED from [io.objectbox:objectbox-android:2.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\objectbox-android-2.1.0.aar\4cad3a86360b3c95103862008dae7ad5\AndroidManifest.xml:6:5-8:41
-MERGED from [io.objectbox:objectbox-android:2.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\objectbox-android-2.1.0.aar\4cad3a86360b3c95103862008dae7ad5\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\8a81db6bf14772f3f52aa29d84ebd7ae\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\8a81db6bf14772f3f52aa29d84ebd7ae\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc02.aar\44e0ad4989a25664acf524e5b6922a94\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc02.aar\44e0ad4989a25664acf524e5b6922a94\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\9ace8d35bcd6f448fac5962ad10f4f0d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\9ace8d35bcd6f448fac5962ad10f4f0d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc02.aar\4f664f925f3f5a322a2484d4d4d7e958\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc02.aar\4f664f925f3f5a322a2484d4d4d7e958\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc02.aar\2f4396076035c47f05dffb2b5670d22e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc02.aar\2f4396076035c47f05dffb2b5670d22e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc02.aar\d05433d87b97b7f4d697ecaaed1d82a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc02.aar\d05433d87b97b7f4d697ecaaed1d82a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc02.aar\966662b9d9fae8c296e5f0351125473b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc02.aar\966662b9d9fae8c296e5f0351125473b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc02.aar\2c84b54ed6ed949530506a800fc11657\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc02.aar\2c84b54ed6ed949530506a800fc11657\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc02.aar\a167168df4383f3f26bf095586a11286\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc02.aar\a167168df4383f3f26bf095586a11286\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc02.aar\f5752e112d794c101689056de289509b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc02.aar\f5752e112d794c101689056de289509b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc02.aar\c1c9630b8b2c30a810ce0f3d76ecdf63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc02.aar\c1c9630b8b2c30a810ce0f3d76ecdf63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc02.aar\06f3fd9edf06cb5dae7d8f6f035b5955\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc02.aar\06f3fd9edf06cb5dae7d8f6f035b5955\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc02.aar\d7871dfd38eb5d5fcf58e1a479039e26\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc02.aar\d7871dfd38eb5d5fcf58e1a479039e26\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc02.aar\a43f1901b4e76988ea48fa74e025a3a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc02.aar\a43f1901b4e76988ea48fa74e025a3a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc02.aar\9bb7106a52291ccce9b8c1d6f01dd990\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc02.aar\9bb7106a52291ccce9b8c1d6f01dd990\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc02.aar\72875fcb2abc970f495e45260bf603d4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc02.aar\72875fcb2abc970f495e45260bf603d4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc02.aar\1cdba4bfc892ea10d5ad66649598023a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc02.aar\614453afe83d0311ce587d35183694ff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc02.aar\614453afe83d0311ce587d35183694ff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc02.aar\6674ea8e1ed5e574396d2221ee433996\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc02.aar\6674ea8e1ed5e574396d2221ee433996\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a56423a28aee4efc2b8cc5edda1d4c1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3a56423a28aee4efc2b8cc5edda1d4c1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc02.aar\1bbc08efdaf29ef0194f391454221bd1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc02.aar\1bbc08efdaf29ef0194f391454221bd1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc02.aar\2a0ba1c2e021fea09e9211f7637bdf5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc02.aar\2a0ba1c2e021fea09e9211f7637bdf5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc02.aar\0f8c981ac14708112362fcc4f8f3af5a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc02.aar\0f8c981ac14708112362fcc4f8f3af5a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\51007fcf19f6476f2442118d6da048ca\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\51007fcf19f6476f2442118d6da048ca\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcb84f42dcab14e0fec54b3d30bed534\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\bcb84f42dcab14e0fec54b3d30bed534\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fde3819281f172841828fdbab0093a7\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fde3819281f172841828fdbab0093a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc02.aar\1ffbcb2424ec1694be8482f635a1a054\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc02] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc02.aar\1ffbcb2424ec1694be8482f635a1a054\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+MERGED from [io.objectbox:objectbox-android:2.1.0] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/objectbox-android-2.1.0.aar/76e051ade2e36d8665a4d03f503a0bd8/AndroidManifest.xml:6:5-8:41
+MERGED from [io.objectbox:objectbox-android:2.1.0] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/objectbox-android-2.1.0.aar/76e051ade2e36d8665a4d03f503a0bd8/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.volley:volley:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/26d30b3f47201e5424d995a8495e0fbb/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/26d30b3f47201e5424d995a8495e0fbb/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/97ee0aa2bd7a377f36f4c981346c18f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/97ee0aa2bd7a377f36f4c981346c18f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/9963ff5ab76c19e3a49924b890991d88/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/9963ff5ab76c19e3a49924b890991d88/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/4ecd5e54324349cc83fa344d7ad3e3c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/4ecd5e54324349cc83fa344d7ad3e3c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/7f6cc6a9793ef512e4446ce4b318424d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/7f6cc6a9793ef512e4446ce4b318424d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c8bff0e73073d51aa41b7b912b3afb22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/c8bff0e73073d51aa41b7b912b3afb22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/fef1baadddf182f65a4afd131ec9bfff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/fef1baadddf182f65a4afd131ec9bfff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/7413b5ef0f7e925ca3dec9a5285a4f10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/7413b5ef0f7e925ca3dec9a5285a4f10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/f2cca6ea65bb94839f3e11d02bb9dc8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/f2cca6ea65bb94839f3e11d02bb9dc8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/f95e788dbb7c103a9f5227aa7f92f4a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/f95e788dbb7c103a9f5227aa7f92f4a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/382079efcbe5c9a130e66d52f325ba2f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/382079efcbe5c9a130e66d52f325ba2f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/8568b197649a278966d79027ea6a9cd0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/8568b197649a278966d79027ea6a9cd0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/4e96ebe864256f56d55211bb5eddf556/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/4e96ebe864256f56d55211bb5eddf556/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/d5585d974399ce533f1b689b76430ba7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/d5585d974399ce533f1b689b76430ba7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/21b12ce2ef2ab533946393c2b90781e9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/21b12ce2ef2ab533946393c2b90781e9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/804869c588dc6cd795f12f868d092264/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/804869c588dc6cd795f12f868d092264/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/18e0daf91228d6c3ca52af55f7cc9338/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5b0346a9e3193ba6ee751d67950b460b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5b0346a9e3193ba6ee751d67950b460b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/c6e9640b43ce73eff0930a629915fb23/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/c6e9640b43ce73eff0930a629915fb23/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/abafa8dd77a50c9a69ae5928cb5c3eec/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/abafa8dd77a50c9a69ae5928cb5c3eec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/b50f15c85f995035a4c96ae74db2eab7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/b50f15c85f995035a4c96ae74db2eab7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/ac17fc2ce6984a3582e44485c77372fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/ac17fc2ce6984a3582e44485c77372fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/82caac02e51bb340d23a5f07b708ab32/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/82caac02e51bb340d23a5f07b708ab32/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4378aea70b516a079f7bae023e3a4872/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4378aea70b516a079f7bae023e3a4872/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/53a7b0bbc3e69b9e344961e055061dfc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/53a7b0bbc3e69b9e344961e055061dfc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/29c5231edeca9f912893c891ab7b7814/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/29c5231edeca9f912893c891ab7b7814/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/0e974aed69bb511435ce7f941fb4ec74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/raafaadg/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/0e974aed69bb511435ce7f941fb4ec74/AndroidManifest.xml:20:5-44
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\rafae\Desktop\Softwares\AplicativoBruxismoVFinal\app\src\main\AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		ADDED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml
+		INJECTED from /home/raafaadg/Software/AplicativoBruxismoVFinal/app/src/main/AndroidManifest.xml

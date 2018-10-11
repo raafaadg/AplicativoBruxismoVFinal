@@ -1,14 +1,17 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support.test:runner-0.5">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-0.5.aar/f932bedf4c96f801653d92915b873466/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-0.5.aar/f0c9a3bf994e9a8174bbd62c2e6a07c9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-0.5.aar/f0c9a3bf994e9a8174bbd62c2e6a07c9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-0.5.aar/f932bedf4c96f801653d92915b873466/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-0.5.aar/f932bedf4c96f801653d92915b873466/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-javadoc.jar!/" />
+      <root url="jar:///opt/android-sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-sources.jar!/" />
+      <root url="jar:///opt/android-sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

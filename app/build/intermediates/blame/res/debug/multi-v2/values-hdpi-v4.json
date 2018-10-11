@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rafae\\Desktop\\Softwares\\AplicativoBruxismoVFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "/home/raafaadg/Software/AplicativoBruxismoVFinal/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rafae\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc02.aar\\44e0ad4989a25664acf524e5b6922a94\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/home/raafaadg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/97ee0aa2bd7a377f36f4c981346c18f7/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

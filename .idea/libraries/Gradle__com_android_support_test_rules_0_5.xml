@@ -1,14 +1,17 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support.test:rules-0.5">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/3ddae5c9eca846705e9a605069e4a2b9/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/14edaf3e22108ca230196c99988a53af/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/14edaf3e22108ca230196c99988a53af/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/3ddae5c9eca846705e9a605069e4a2b9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-0.5.aar/3ddae5c9eca846705e9a605069e4a2b9/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-javadoc.jar!/" />
+      <root url="jar:///opt/android-sdk/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-sources.jar!/" />
+      <root url="jar:///opt/android-sdk/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
